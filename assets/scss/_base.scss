@@ -1,0 +1,67 @@
+// main: ../main.scss
+
+.base-shadow {
+  box-shadow: 0 1px 3px rgba(63, 63, 68, 0.15), 0 0 4px rgba(63, 63, 68, 0.05);
+  border-radius: 4rem;
+}
+
+.soft-shadow {
+  box-shadow: 0 2px 16px rgba(33, 43, 54, 0.08);
+}
+
+.high-shadow {
+  box-shadow: 0 4px 8px rgba(37, 50, 77, 0.26);
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
+[flex]{
+  display: flex
+}
+
+.row {
+  display: flex;
+  @include size(small) {
+    flex-direction: column;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.padding-all {
+  padding: 24rem;
+}
+//Slider Nav elements
+
+.hidden-mob {
+  @include size(small) {
+    display: none!important;
+  }
+}
+
+.hidden-tab {
+  @include size(medium) {
+    display: none!important;
+  }
+}
+
+.hidden-des {
+  @include size(large) {
+    display: none!important;
+  }
+}

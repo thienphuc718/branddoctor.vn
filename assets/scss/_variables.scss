@@ -1,0 +1,104 @@
+// main: ../main.scss
+$blueDark: #00114f;
+$blueBasic: #003E9F;
+$blueLight: #5584E5;
+$blueLighter: #E3ECFF; /* PRIMARY PALETTE */
+$carolinaDark: #3E42AB;
+$carolinaBasic: #4D52E2;
+$carolinaLight: #738FFF;
+$carolinaLighter: #E0E6FF;
+$yellowDark: #FF9B03;
+$yellowBasic: #FFBC05;
+$yellowLight: #FFD985;
+$yellowLighter: #FFFAE5; /* SEMANTIC PALETTE */
+$successDark: #108043;
+$successBasic: #50B83C;
+$successLight: #93D982;
+$successLighter: #EBFAE7;
+$warningDark: #E57D00;
+$warningBasic: #FFAB00;
+$warningLight: #FFD659;
+$warningLighter: #FFFAE5;
+$errorDark: #B21907;
+$errorBasic: #DE3618;
+$errorLight: #FF9980;
+$errorLighter: #FBEAE5;
+$additionalDark: #2F338C;
+$additionalBasic: #5656D8;
+$additionalLight: #9696FA;
+$additionalLighter: #E0E3FF; /* Level TAG PALETTE */
+$tagLevel1: #339933;
+$tagLevel2: #FF6600;
+$tagLevel3: #E22B2B;
+$tagLevel4: #E50073;
+$tagLevel5: #BF00FF;
+$tagLevel6: #0A6CFF;
+$tagLevel7: linear-gradient(90deg, rgba(255,171,0,1) 0%, rgba(255,102,0,1) 80%, rgba(226,43,43,1) 100%); /* NEUTRAL PALETTE */
+$inkBasic: #212B36;
+$inkLight: #454F5B;
+$inkLighter: #637381;
+$inkLightest: #919EAB;
+$skyBasic: #C4CDD5;
+$skyLight: #DFE3E8;
+$skyLighter: #F4F6F8;
+$skyLightest: #F9FAFB;
+$white: #FFFFFF;
+$colors: (
+  blueDark: #00114f,
+  blueBasic: #003E9F,
+  blueLight: #5584E5,
+  blueLighter: #E3ECFF,
+  /* PRIMARY PALETTE */
+  carolinaDark: #3E42AB,
+  carolinaBasic: #4D52E2,
+  carolinaLight: #738FFF,
+  carolinaLighter: #E0E6FF,
+  yellowDark: #FF9B03,
+  yellowBasic: #FFBC05,
+  yellowLight: #FFD985,
+  yellowLighter: #FFFAE5,
+  /* SEMANTIC PALETTE */
+  successDark: #108043,
+  successBasic: #50B83C,
+  successLight: #93D982,
+  successLighter: #EBFAE7,
+  warningDark: #E57D00,
+  warningBasic: #FFAB00,
+  warningLight: #FFD659,
+  warningLighter: #FFFAE5,
+  errorDark: #B21907,
+  errorBasic: #DE3618,
+  errorLight: #FF9980,
+  errorLighter: #FBEAE5,
+  additionalDark: #2F338C,
+  additionalBasic: #5656D8,
+  additionalLight: #9696FA,
+  additionalLighter: #E0E3FF,
+  /* Level TAG PALETTE */
+  tagLevel1: #339933,
+  tagLevel2: #FF6600,
+  tagLevel3: #E22B2B,
+  tagLevel4: #E50073,
+  tagLevel5: #BF00FF,
+  tagLevel6: #0A6CFF,
+  tagLevel7: linear-gradient(90deg, rgba(255,171,0,1) 0%, rgba(255,102,0,1) 80%, rgba(226,43,43,1) 100%),
+  /* NEUTRAL PALETTE */
+  inkBasic: #212B36,
+  inkLight: #454F5B,
+  inkLighter: #637381,
+  inkLightest: #919EAB,
+  skyBasic: #C4CDD5,
+  skyLight: #DFE3E8,
+  skyLighter: #F4F6F8,
+  skyLightest: #F9FAFB,
+  'white': #FFFFFF,
+);
+@each $key, $val in $colors {
+  .#{$key} {
+    color: #{$val};
+  }
+
+  .bg-#{$key} {
+    background-color: #{$val};
+  }
+}

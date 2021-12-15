@@ -1,0 +1,146 @@
+@include size('large') {
+  html {
+    font-size: calc(3.5745vw*1.111694182389937/61);
+  }
+}
+@include size('medium') {
+  html {
+    font-size: calc(0.1302081012767909vw);
+  }
+}
+@include size('small') {
+  html {
+    font-size: calc(0.2442875528vw*1.09);
+  }
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16rem;
+  color: $inkLighter;
+}
+
+
+
+  h1 {
+    font-weight: bold;
+    font-size: 61rem;
+    line-height: 120%;
+    @include size('small') {
+      font-weight: bold;
+      font-size: 48rem;
+      line-height: 120%;
+    }
+  }
+
+  .heading-1 h2 {
+    font-weight: 600;
+    font-size: 39rem;
+    line-height: 120%;
+    @include size('small') {
+      font-weight: 600;
+      font-size: 34rem;
+      line-height: 120%;
+    }
+  }
+
+  .heading-2 h2 {
+    font-weight: 600;
+    font-size: 31rem;
+    line-height: 120%;
+    @include size('small') {
+      font-weight: 600;
+      font-size: 27.5rem;
+      line-height: 120%;
+    }
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 25rem;
+    line-height: 120%;
+    @include size('small') {
+      font-weight: 600;
+      font-size: 22rem;
+      line-height: 120%;
+    }
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 20rem;
+    line-height: 120%;
+  }
+
+.heading-box {
+  @include size('small') {
+    width: 100%!important;
+    min-width: 100%!important;
+  }
+}
+
+
+
+  p, li, input {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15rem;
+    line-height: 1.8em;
+    letter-spacing: 0.1rem;
+
+    &.small {
+      font-size: 12rem;
+    }
+
+    &.large {
+      font-size: 20rem;
+    }
+
+    &.thick {
+      font-weight: 600;
+    }
+
+    &.uppercase {
+      text-transform: uppercase;
+    }
+  }
+
+
+.content-box {
+  @include size('small') {
+    width: 100%!important;
+  }
+}
+.light {
+  :is(h1, h2, h3, h4, a) {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: $inkBasic;
+  }
+
+  p {
+    color: $inkBasic;
+  }
+  *{
+    border-color: $skyLight;
+  }
+}
+.dark {
+  :is(h1, h2, h3, h4, a) {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: $white;
+  }
+
+  p {
+    color: $white;
+  }
+  *{
+    border-color: $white;
+  }
+}
+
+
+
+.gradient-text {
+  background: linear-gradient(318.62deg, rgba(223, 191, 78, 0.98) 8.98%, #FFEABA 91.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
