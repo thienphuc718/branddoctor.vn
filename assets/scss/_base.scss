@@ -44,7 +44,19 @@
 }
 
 .padding-all {
-  padding: 24rem;
+  padding: 80rem 200rem;
+  @include size('small'){
+    padding: 80rem 24rem;
+  }
+}
+.slider{
+  overflow: hidden;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+  .track{
+    transition: 1s ease;
+  }
 }
 //Slider Nav elements
 

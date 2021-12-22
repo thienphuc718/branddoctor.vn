@@ -101,4 +101,8 @@ $colors: (
   .bg-#{$key} {
     background-color: #{$val};
   }
+
+  .border-#{$key} {
+    border-color: #{$val};
+  }
 }

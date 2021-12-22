@@ -1,16 +1,18 @@
 <template>
-  <div class="slider flex gap-16rem">
-    <div
-      v-for="(slide, index) in slide"
-      class="slide flex gap-12rem border-1 rounded-4rem p-24rem items-start base-shadow"
-      :class="{ 'item-active': activeSlide.title == slide.title }"
-    >
-      <BaseIcon :name="`human-${index + 1}`" class="icon" />
-      <div class="col">
-        <p class="font-semibold leading-1.4em mb-8rem">
-          <span class="blueLight">Cá nhân có nhu cầu xây dựng thương hiệu cá nhân</span>
-        </p>
-        <p>Để phát triển doanh nghiệp của chính mình trong tương lai.</p>
+  <div id="audienceSlider" class="slider">
+    <div ref="track" class="track flex gap-16rem">
+      <div
+        v-for="(slide, index) in slide"
+        class="slide flex gap-12rem border-1 rounded-4rem p-24rem items-start base-shadow"
+        :class="{ 'item-active': activeSlide.title == slide.title }"
+      >
+        <BaseIcon :name="`human-${index + 1}`" class="icon" />
+        <div class="col">
+          <p class="font-semibold leading-1.4em mb-8rem">
+            <span class="blueLight">Cá nhân có nhu cầu xây dựng thương hiệu cá nhân</span>
+          </p>
+          <p>Để phát triển doanh nghiệp của chính mình trong tương lai.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -38,6 +40,10 @@ const slide = [
   },
 ]
 const activeSlide = ref(slide[0])
+const slideIndex = inject('slideIndex')
+watchEffect(() => {
+  activeSlide.value = slide[slideIndex.value]
+})
 </script>
 <style lang="scss" scoped>
 .slider {
@@ -45,7 +51,11 @@ const activeSlide = ref(slide[0])
 
   .slide {
     min-width: calc(50% - 8rem);
+    @include size(small) {
+      min-width: 100%;
+    }
     min-height: 162rem;
+    transition: 0.5s ease;
     &.item-active {
       background: radial-gradient(
         100% 100% at 49.83% 0%,

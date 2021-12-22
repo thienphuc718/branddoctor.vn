@@ -1,11 +1,13 @@
 <template>
-  <div class="col items-center w-728rem content-box heading-box">
+  <div class="col items-center w-768rem content-box heading-box">
     <div class="flex justify-center mb-80rem">
-      <p>Khóa học: Bác sĩ thương hiệu một sao</p>
-      <p class="px-8rem">
-        •
+      <p class="whitespace-nowrap">
+        Khóa học: Bác sĩ Thương hiệu Một sao (Cấp độ 1)
       </p>
-      <p class="thick">
+      <p class="whitespace-nowrap px-8rem">
+        <span> • </span>
+      </p>
+      <p class="thick whitespace-nowrap">
         <span class="blueLight">Chuyên đề 01: Thương hiệu cá nhân 5.0 - Góc nhìn từ nh...</span>
       </p>
     </div>
@@ -23,7 +25,8 @@
         <div class="col">
           <div class="heading-2">
             <h2 class="mb-12rem">
-              {{ why.title }} <span class="thick blueLight">?</span>
+              <span class="inkLight">{{ why.before }}
+                <span class="yellowDark">{{ why.content }}</span>{{ why.after }}</span>
             </h2>
           </div>
           <p>
@@ -38,21 +41,30 @@
 <script setup lang="ts">
 const why = [
   {
-    title:
-      'Vì sao bạn không tìm thấy được khách hàng mặt dù đã chạy quảng cáo rất nhiều ',
-    desc:
-      'Vì sao bạn không tìm thấy được khách hàng mặt dù đã chạy quảng cáo rất nhiều?',
+    before: 'Tôi mong muốn có được một buổi',
+    content: 'phỏng vấn ',
+    after: 'thành công?',
+    desc: 'Vì cơ hội dành cho không chỉ mình, mà cho cả hằng trăm người khác!',
   },
   {
-    title:
-      'Vì sao đâm đầu vào chuyển đổi số nhưng kết quả vẫn không khá là bao ',
+    before: 'Tôi muốn khẳng định 100% khả năng của mình để',
+    content: 'thăng tiến',
+    after: '?',
     desc:
-      'Vì sao bạn không tìm thấy được khách hàng mặt dù đã chạy quảng cáo rất nhiều?',
+      'Vì sự tinh tưởng từ đồng nghiệp, nhân viên không xuất phát từ địa vị.',
   },
   {
-    title: 'Vì sao ai cũng đâm đầu chuyển đổi số mà doanh thu vẫn dậm chân ',
-    desc:
-      'Vì sao bạn không tìm thấy được khách hàng mặt dù đã chạy quảng cáo rất nhiều?',
+    before: 'Tôi sợ (hoặc e rằng) một ngày nào đó, tôi sẽ bỏ rơi',
+    content: 'các dự định ',
+    after: 'của mình?',
+    desc: 'Vì tôi thấy mình không khác biệt đủ để hiện thực ước mơ.',
   },
 ]
 </script>
+<style lang="scss" scoped>
+@include size('small') {
+  .why {
+    gap: 24rem;
+  }
+}
+</style>

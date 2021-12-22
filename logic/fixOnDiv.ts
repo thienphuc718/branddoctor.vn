@@ -1,8 +1,41 @@
+import { getDocument } from 'ssr-window'
+import { onMounted, onUnmounted, ref } from 'vue'
+const document = getDocument()
 export default function fixOnDiv(fixedElement: any) {
+  const isFix = ref(false)
+  fixedElement = document.querySelector(fixedElement)
   if (fixedElement) {
-    const offSetBounding = fixedElement.parentNode.getBoundingClientRect()
-    if (offSetBounding.top < 160 && offSetBounding.bottom > window.innerHeight)
-      fixedElement.setAttribute('style', `top: ${-offSetBounding.top + 120}rem`)
-    else fixedElement.setAttribute('style', '')
+    const fixedElementParent = fixedElement.parentNode
+    const scrollStuff = () => {
+      const offSetBounding = fixedElementParent.getBoundingClientRect()
+      if (
+        offSetBounding.top < 160
+        && offSetBounding.bottom > window.innerHeight - 300
+      ) {
+        isFix.value = true
+        fixedElementParent.style.position = 'relative'
+        fixedElement.setAttribute(
+          'style',
+          `position: absolute;top: ${-offSetBounding.top
+            + 60}px; transition: 0.25s ease`,
+        )
+      }
+      else if (offSetBounding.bottom < window.innerHeight - 300) {
+        isFix.value = false
+        fixedElement.setAttribute(
+          'style',
+          'position: absolute;top: 0px; transition: 3s ease',
+        )
+      }
+    }
+    onMounted(() => {
+      window.addEventListener('scroll', scrollStuff)
+    })
+    onUnmounted(() => {
+      window.removeEventListener('scroll', scrollStuff)
+    })
+  }
+  return {
+    isFix,
   }
 }

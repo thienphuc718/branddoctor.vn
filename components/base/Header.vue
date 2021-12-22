@@ -1,21 +1,21 @@
 <template>
   <div
     id="header"
-    class="row gap-24rem items-center justify-between bg-black h-80rem padding-all content-box dark border-b-1"
+    class="flex gap-24rem items-center justify-between bg-black h-70rem p-24rem dark border-b-1 w-100vw"
   >
-    <div class="search-bar row gap-24rem items-center flex-1">
+    <div class="search-bar flex gap-24rem items-center flex-1">
       <BaseIcon name="search" />
       <input
         type="text"
         placeholder="Tìm kiếm khóa học, giảng viên,...."
-        class="italic bg-transparent border-0"
+        class="italic bg-transparent border-0 w-300rem hidden-mob"
       >
     </div>
-    <div class="logo flex-auto row justify-center">
+    <div class="logo flex-auto flex justify-center">
       <BaseIcon name="bda-logo-text" />
     </div>
-    <div class="menu row flex-1 justify-end">
-      <p class="thick border-r-1 pr-24rem ">
+    <div class="menu flex flex-1 justify-end">
+      <p class="thick border-r-1 pr-24rem hidden-mob">
         ĐĂNG NHẬP
       </p>
       <div
@@ -34,11 +34,34 @@ import { mediaMobile } from 'mediaQuery'
 </script>
 
 <style lang="scss" scoped>
-.hamburger {
-  &:hover {
-    .line {
-      width: 20rem;
-      transition: 0.5s ease;
+#header {
+  .logo {
+    @include size('small') {
+      justify-content: center;
+
+      .icon-bda-logo-text {
+        width: 90%;
+      }
+    }
+  }
+
+  .menu {
+    @include size('small') {
+      justify-content: flex-start;
+    }
+
+    .hamburger {
+      @include size('small') {
+        height: 20rem;
+        margin-left: 0;
+      }
+
+      &:hover {
+        .line {
+          width: 20rem;
+          transition: 0.5s ease;
+        }
+      }
     }
   }
 }

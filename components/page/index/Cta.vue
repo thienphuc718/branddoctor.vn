@@ -1,7 +1,7 @@
 <template>
   <BaseButton
     :title="props.title"
-    size="regular"
+    :size="props.size"
     :theme="props.theme"
     class="special-eff-btn"
   >
@@ -15,6 +15,7 @@ import gsap from 'gsap'
 const props = defineProps({
   theme: '',
   title: '',
+  size: { default: 'regular', type: String },
 })
 
 onMounted(() => {

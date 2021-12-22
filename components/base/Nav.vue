@@ -11,7 +11,7 @@ const props = defineProps({
 </script>
 <style lang="scss">
 .nav-prev {
-  opacity: 0.5;
+  opacity: 0.75;
   cursor: pointer;
   &:hover {
     opacity: 1;

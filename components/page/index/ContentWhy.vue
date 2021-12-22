@@ -1,5 +1,10 @@
 <template>
-  <div class="content-why pb-64rem border-b-1">
+  <div class="content-why">
+    <div class="heading-1">
+      <h2 class="inkBasic">
+        <span class="hidden-des flex">Về chuyên đề</span>
+      </h2>
+    </div>
     <div class="heading-2">
       <h2 class="pb-32rem border-b-1 mb-32rem mt-40rem">
         <span class="carolinaLight font-semibold">
@@ -63,3 +68,19 @@ const why = [
   },
 ]
 </script>
+<style lang="scss" scoped>
+@include size('small') {
+  .heading-1 {
+    .hidden-des {
+      &:before {
+        content: '';
+        display: block;
+        min-height: 40rem;
+        width: 8rem;
+        background: $blueLight;
+        margin-right: 16rem;
+      }
+    }
+  }
+}
+</style>
