@@ -2,7 +2,7 @@
   <section class="light center">
     <div class="popup-content">
       <slot />
-      <div class="close-btn" @click="isPopupActive = false"></div>
+      <div class="close-btn" @click="isPopupActive = false" />
     </div>
   </section>
 </template>
@@ -42,7 +42,7 @@ const isPopupActive = inject('isPopupActive')
     @include size(small) {
       min-width: calc(100% - 48rem);
       width: calc(100% - 48rem);
-      padding: 32rem;
+      padding: 24rem;
     }
     .close-btn {
       height: 24rem;

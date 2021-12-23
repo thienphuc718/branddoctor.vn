@@ -68,6 +68,7 @@
           </p>
         </div>
       </div>
+      <input type="hidden" name="your-type" :value="activeTab.title">
       <div
         v-for="index in cloneIndex"
         v-if="activeTab.title == tab[1].title"
