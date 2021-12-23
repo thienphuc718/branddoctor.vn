@@ -72,6 +72,7 @@
 </template>
 <script setup lang="ts">
 import Slider from '~/logic/slider.ts'
+import { mediaMobile } from '~/logic/mediaQuery.ts'
 const slide = [
   {
     time: '09:00',
@@ -127,7 +128,7 @@ const isPause = ref(false)
 
 onMounted(() => {
   setInterval(() => {
-    if (!isPause.value) hello.slideNext()
+    if (!isPause.value && !mediaMobile.matches) hello.slideNext()
   }, 3000)
 })
 </script>

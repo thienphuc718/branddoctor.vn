@@ -1,12 +1,11 @@
 <template>
-  <div class="video-trailer w-1126rem h-622rem rounded-8rem bg-black center">
-    <div class="row center">
-      <BaseIcon name="play-btn" class="mr-12rem" />
-      <p>
-        <span class="text-white">Xem trailer</span>
-      </p>
-    </div>
-  </div>
+  <iframe
+    src="https://www.youtube.com/embed/6dQT3FVslVQ"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    class="video-trailer w-1126rem h-622rem rounded-8rem bg-black center"
+  />
 </template>
 <style lang="scss" scoped>
 @include size('small') {

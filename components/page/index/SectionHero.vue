@@ -1,5 +1,10 @@
 <template>
-  <div class="dark bg-black p-24rem section-hero">
+  <div class="dark p-24rem section-hero relative pt-94rem">
+    <div id="myVideo" class="absolute left-0rem top-0rem -z-1 min-w-100vw">
+      <video autoplay muted loop class="min-w-100vw min-h-100vh">
+        <source src="/trailer.mp4" type="video/mp4">
+      </video>
+    </div>
     <PageIndexSectionHeroHeader />
     <div
       class="row content-row center p-80rem gap-48rem content-box heading-box"
@@ -109,6 +114,27 @@
   </div>
 </template>
 <style lang="scss" scoped>
+#myVideo {
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: black;
+    opacity: 0.8;
+    @include size(small) {
+      // transform: translateX(-40%);
+    }
+  }
+  @include size('small') {
+    video {
+      min-height: 200vh;
+      // transform: translateX(0%);
+    }
+  }
+}
 @include size('small') {
   .dark.section-hero {
     padding-bottom: 80rem;
