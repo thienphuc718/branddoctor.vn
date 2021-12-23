@@ -7,7 +7,7 @@
     </div>
     <div class="heading-2">
       <h2 class="pb-32rem border-b-1 mb-32rem mt-40rem">
-        <span class="carolinaLight font-semibold">
+        <span class="carolinaLight font-medium">
           Tại sao bạn nên tham gia chương trình này?
         </span>
       </h2>

@@ -23,7 +23,7 @@ body {
 
 
   h1 {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 61rem;
     line-height: 120%;
     @include size('small') {
@@ -34,18 +34,18 @@ body {
   }
 
   .heading-1 h2 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 39rem;
     line-height: 120%;
     @include size('small') {
-      font-weight: 600;
+      font-weight: 500;
       font-size: 34rem;
       line-height: 120%;
     }
   }
 
   .heading-2 h2 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 31rem;
     line-height: 120%;
     @include size('small') {
@@ -56,7 +56,7 @@ body {
   }
 
   h3 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 25rem;
     line-height: 120%;
     @include size('small') {

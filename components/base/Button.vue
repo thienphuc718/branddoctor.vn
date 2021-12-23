@@ -52,7 +52,7 @@ const isText = computed(() => {
   justify-content: center;
   align-items: center;
   color: $blueBasic;
-  font-weight: 600;
+  font-weight: 500;
 
   &:hover {
     color: $blueLight;

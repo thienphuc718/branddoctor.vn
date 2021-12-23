@@ -2,7 +2,7 @@
   <div class="thematic-general relative">
     <div class="heading-2">
       <h2 class="mb-24rem">
-        <span class="carolinaLight font-semibold">
+        <span class="carolinaLight font-medium">
           Tổng quan chuyên đề
         </span>
       </h2>

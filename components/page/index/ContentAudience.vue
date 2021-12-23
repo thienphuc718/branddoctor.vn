@@ -4,7 +4,7 @@
       <div class="flex justify-between">
         <div class="heading-2">
           <h2>
-            <span class="carolinaLight font-semibold">
+            <span class="carolinaLight font-medium">
               Đối tượng tham dự
             </span>
           </h2>

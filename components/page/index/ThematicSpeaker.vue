@@ -2,7 +2,7 @@
   <div class="col thematic-content">
     <div class="heading-2">
       <h2 class="mb-24rem">
-        <span class="carolinaLight font-semibold">
+        <span class="carolinaLight font-medium">
           Đội ngũ giảng viên
         </span>
       </h2>
