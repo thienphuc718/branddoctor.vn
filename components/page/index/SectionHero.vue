@@ -124,15 +124,9 @@
     top: 0;
     background: black;
     opacity: 0.8;
-    @include size(small) {
-      // transform: translateX(-40%);
-    }
   }
   @include size('small') {
-    video {
-      min-height: 200vh;
-      // transform: translateX(0%);
-    }
+    left: -70%;
   }
 }
 @include size('small') {
