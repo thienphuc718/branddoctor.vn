@@ -18,7 +18,12 @@
       />
       <div class="divider flex-grow" />
     </BaseNav>
-    <div id="talkshowSlider" class="slider light flex-grow">
+    <div
+      id="talkshowSlider"
+      class="slider light flex-grow"
+      @mouseover="isPause = true"
+      @mouseout="isPause = false"
+    >
       <div class="track col items-stretch gap-24rem">
         <div
           v-for="slide in slide"
@@ -117,6 +122,14 @@ const slide = [
   },
 ]
 const hello = Slider('#talkshowSlider', 2, 'verticle')
+
+const isPause = ref(false)
+
+onMounted(() => {
+  setInterval(() => {
+    if (!isPause.value) hello.slideNext()
+  }, 3000)
+})
 </script>
 <style lang="scss" scoped>
 .base-nav {

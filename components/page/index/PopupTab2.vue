@@ -36,7 +36,7 @@
             :name="ticket.name"
           >
         </div>
-        <div class="row">
+        <div class="row w-100%">
           <div class="w-49% flex gap-24rem ticket-name">
             <img
               :src="`/ldp-ticket-${index + 1}.jpg`"
@@ -56,18 +56,18 @@
               </p>
             </div>
           </div>
-          <div class="flex ticket-price">
-            <p class="w-17%">
+          <div class="flex ticket-price flex-grow items-center">
+            <p class="w-33%">
               <span class="text-18rem font-medium inkLight">{{
                 currency(ticket.price)
               }}</span>
             </p>
-            <div class="w-17%">
+            <div class="w-33%">
               <p class="h-32rem w-32rem bg-inkLightest rounded-4rem center">
                 <span class="font-semibold white">{{ cloneIndex }}</span>
               </p>
             </div>
-            <p class="w-17%  text-right  hidden-mob">
+            <p class="w-33%  text-right  hidden-mob">
               <span class="text-18rem font-medium blueLight">{{
                 currency(ticket.price * cloneIndex)
               }}</span>
