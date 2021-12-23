@@ -2,7 +2,7 @@
   <div class="col items-center w-768rem content-box heading-box">
     <div class="flex justify-center mb-80rem">
       <p class="whitespace-nowrap">
-        Khóa học: Bác sĩ Thương hiệu Một sao (Cấp độ 1)
+        Khóa học: Bác sĩ Thương hiệu 1 sao
       </p>
       <p class="whitespace-nowrap px-8rem">
         <span> • </span>
@@ -51,13 +51,13 @@ const why = [
     content: 'thăng tiến',
     after: '?',
     desc:
-      'Vì sự tinh tưởng từ đồng nghiệp, nhân viên không xuất phát từ địa vị.',
+      'Vì sự tin tưởng từ đồng nghiệp, nhân viên không xuất phát từ địa vị.',
   },
   {
     before: 'Tôi sợ (hoặc e rằng) một ngày nào đó, tôi sẽ bỏ rơi',
     content: 'các dự định ',
     after: 'của mình?',
-    desc: 'Vì tôi thấy mình không khác biệt đủ để hiện thực ước mơ.',
+    desc: 'Vì tôi thấy mình không đủ khác biệt để thực hiện ước mơ.',
   },
 ]
 </script>

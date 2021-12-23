@@ -30,7 +30,7 @@
               <div>
                 <h3>{{ slide.time }}</h3>
                 <p class="small" :class="{ 'mb-12rem': slide.speaker }">
-                  SÁNG | 07/11/2021
+                  SÁNG | 08/01/2021
                 </p>
               </div>
               <img
@@ -70,26 +70,26 @@ import Slider from '~/logic/slider.ts'
 const slide = [
   {
     time: '09:00',
-    title: 'Cảm ơn đơn vị tổ chức, giới thiệu diễn giả và khai giảng chuyên đề',
+    title: 'Khai giảng chuyên đề',
     before: '',
     desc: '',
     speaker: false,
   },
   {
-    time: '09:30',
+    time: '09:15',
     title: 'Câu chuyện xây dựng thương hiệu của tôi',
     before: 'Clip ngắn |',
     desc:
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Lắng nghe diễn giả chia sẻ về câu chuyện xây dựng thương hiệu cá nhân của họ.',
     speaker: true,
   },
   {
     time: '09:40',
     title:
-      'Những quan niệm sai lầm về thương hiệu cá nhân & các nhân tố tạo thành thương hiệu cá nhân',
+      'Những quan niệm sai lầm về thương hiệu cá nhân và các nhân tố tạo thành thương hiệu cá nhân',
     before: '',
     desc:
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Phá tan những hiểu lầm về thương hiệu cá nhân và tìm hiểu đâu là các nhân tố tạo thành thương hiệu cá nhân.',
     speaker: true,
   },
   {
@@ -97,7 +97,7 @@ const slide = [
     title: 'Tổng quan lộ trình 3 bước xây dựng thương hiệu cá nhân 5.0',
     before: '',
     desc:
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Khám phá con đường xây dựng thương hiệu cá nhân trong thời đại 5.0 và tìm cách thấu hiểu bản thân.',
     speaker: true,
   },
   {
@@ -105,7 +105,7 @@ const slide = [
     title: 'Giải đáp thắc mắc',
     before: '',
     desc:
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Đi tìm lời giải đáp cho những thắc mắc về thương hiệu cá nhân 5.0 thông qua việc đặt câu hỏi cho diễn giả.',
     speaker: true,
   },
   {

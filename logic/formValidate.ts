@@ -1,5 +1,6 @@
 import { getDocument } from 'ssr-window'
 const document = getDocument()
+
 export default function formValidate(e) {
   const formFields = document.querySelectorAll(
     `#${e.target.id} :is(input, textarea)`,
@@ -9,7 +10,7 @@ export default function formValidate(e) {
     input.onclick = () => {
       input.parentNode.setAttribute('class', '')
     }
-    if (input.value == '' && input.hasAttribute('data-required'))
+    if (input.value == '' && input.getAttribute('data-required') == 'true')
       input.parentNode.setAttribute('class', 'error required')
     else formValue[input.name] = input.value
   })

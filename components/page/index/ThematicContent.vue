@@ -78,7 +78,7 @@
       </div>
     </div>
     <p>
-      Sau khi kết thúc buổi 4, bạn cần trải qua
+      Sau khi kết thúc buổi 4, bạn sẽ trải qua
       <span class="font-semibold">đánh giá cuối chuyên đề</span> về khả năng tự
       thực hành thương hiệu cá nhân của bạn.
     </p>
@@ -147,7 +147,7 @@ const accord = [
     title: {
       before: '',
       content:
-        'Khai phá điểm khác biệt, chiến lược định vị thành công thương hiệu cá nhân 5.0',
+        'Khai phá điểm khác biệt, thiết lập định vị thương hiệu cá nhân 5.0',
       after: '',
     },
     content: [
@@ -182,7 +182,7 @@ const accord = [
       {
         icon: 'pratice',
         content:
-          'Xây dựng bộ chiến lược định vị trong nhóm Cộng đồng Brand Doctors.',
+          'Thiết lập bảng định vị thương hiệu cá nhân trong nhóm Cộng đồng Brand Doctors với sự hỗ trợ trực tiếp từ các chuyên gia.',
         link: '',
       },
     ],
@@ -215,7 +215,7 @@ const accord = [
       {
         icon: 'pratice',
         content:
-          'Điều chỉnh chiến lược định vị và nâng cấp thương hiệu cá nhân thông qua hành trình khách hàng của bạn.',
+          'Điều chỉnh bảng định vị và nâng cấp thương hiệu cá nhân thông qua hành trình khách hàng của bạn.',
         link: '',
       },
     ],

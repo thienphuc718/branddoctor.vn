@@ -105,9 +105,9 @@ const speaker = [
     desc1:
       'Bác sĩ Thương hiệu Nguyễn Khánh Trung – Một trong những người tiên phong trong lĩnh vực chăm sóc sức mạnh thương hiệu của các doanh nghiệp Việt.',
     desc1Content: [
-      'Hiện là Viện trưởng Viện đào tạo Bác sĩ Thương hiệu – Chủ tịch HĐQT Công ty CP Bác sĩ Thương hiệu.',
       'Bắt đầu sứ mệnh lan tỏa giá trị thương hiệu Việt bằng việc mang cà phê Trung Nguyên đi khắp các miền đất nước và ra khỏi lãnh thổ Việt Nam, đến hơn 60 quốc gia.',
       'Đồng hành cùng nhiều doanh nghiệp lớn như iSCHOOL (NHG), Pierre Cardin, Savico, LG Vina Cosmetics,v.v với vai trò Giám đốc cấp cao và cố vấn chiến lược.',
+      'Đến năm 2020, ông sáng lập Brand Doctor Group với mong muốn giúp doanh nghiệp Việt phát triển trường tồn trên con đường xây dựng thương hiệu và khiến thanh niên không phải trăn trở trên hành trình kiến tạo sự nghiệp của mình. ',
     ],
     desc2: 'Phương pháp giảng dạy',
     desc2Content: [
@@ -123,10 +123,9 @@ const speaker = [
     desc1:
       'Hoa hậu Lê Âu Ngân Anh – Người phụ nữ thành công từ đấu trường nhan sắc đến đấu trường tri thức',
     desc1Content: [
-      'Giám đốc quản trị sự kiện tại trường ĐH Hoa Sen.',
-      'Hoa hậu Đại dương Việt Nam 2017. ',
-      'Á hậu 4 Miss Intercontinental 2018.',
-      'Giảng viên trường Đại học Hoa Sen.',
+      'Dấn thân vào đấu trường nhan sắc từ năm 2017, cô đăng quang Hoa hậu Đại dương Việt Nam 2017 và Á hậu 4 Miss Intercontinental 2018 khi chỉ mới ở ngưỡng tuổi 20.',
+      'Đối mặt với nhiều tai tiếng sau khi đăng quang, cô lựa chọn hoàn thiện bản thân trên con đường học vấn, tốt nghiệp Thạc sĩ ngành Quản trị Sự Kiện Quốc Tế tại Đại học Salford (Anh).',
+      'Thành công chứng minh bản thân là một người phụ nữ “tài sắc vẹn toàn”, năm 2021, cô trở thành giảng viên tại Đại học Hoa Sen và được bổ nhiệm làm Giám đốc quản trị trẻ nhất của trường.',
     ],
     desc2: 'Hành trình phát triển',
     desc2Content: [

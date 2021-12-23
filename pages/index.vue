@@ -1,5 +1,6 @@
 <template>
   <div class="index">
+    <PageIndexPopup v-if="isCheckout" />
     <PageIndexAnimation v-if="isAnimated" />
     <BaseRunningText />
     <BaseHeader />
@@ -16,6 +17,8 @@ import { getDocument } from 'ssr-window'
 
 const document = getDocument()
 const isAnimated = ref(false)
+const isCheckout = ref(false)
+provide('isCheckout', isCheckout)
 provide('isAnimated', isAnimated)
 onMounted(() => {
   isAnimated.value = true

@@ -2,7 +2,7 @@
   <div class="dark h-40rem bg-blueBasic w-100vw overflow-hidden running-text">
     <div class="track justify-start flex items-center h-100%">
       <p v-for="text in 5" :key="text" class="uppercase thick no-wrap">
-        – TẶNG BẠN 1 VÉ TALK SHOW THƯƠNG HIỆU CÁ NHÂN 08.01.2022 –
+        – TẶNG BẠN 1 VÉ TALK SHOW THƯƠNG HIỆU CÁ NHÂN 5.0 – 08.01.2022 –
         <span class="warningLight">GIỮ CHỖ NGAY&nbsp;</span>
       </p>
     </div>

@@ -39,8 +39,17 @@
           <PageIndexProgress bar="#5584E5" inner="#DFE3E8" bg="white" />
         </div>
         <div class="col gap-12rem mt-8rem">
-          <PageIndexCta theme="light" title="Đăng ký học chính thức" />
-          <BaseButton title="Tham gia chuyên đề" size="regular" theme="dark" />
+          <PageIndexCta
+            theme="light"
+            title="Đăng ký học chính thức"
+            @click="isCheckout = true"
+          />
+          <BaseButton
+            title="Tham gia chuyên đề"
+            size="regular"
+            theme="dark"
+            @click="isCheckout = true"
+          />
         </div>
       </div>
     </div>
@@ -101,16 +110,17 @@
 <script setup lang="ts">
 import Counter from '~/logic/Counter.ts'
 
+const isCheckout = inject('isCheckout')
 const digit = [
   { type: 'days', text: 'NGÀY' },
   { type: 'hours', text: 'GIỜ' },
   { type: 'minutes', text: 'PHÚT' },
   { type: 'seconds', text: 'GIÂY' },
 ]
-const counter = Counter('Dec 27 2021 09:00:00 GMT+0700 (Giờ Đông Dương)')
+const counter = Counter('Jan 8 2022 09:00:00 GMT+0700 (Giờ Đông Dương)')
 
 const info = [
-  { icon: 'calendar', title: 'Khai giảng:', desc: '07/01/2021', bold: true },
+  { icon: 'calendar', title: 'Khai giảng:', desc: '08/01/2021', bold: true },
   {
     icon: 'calendar-day',
     title: 'Ngày học:',

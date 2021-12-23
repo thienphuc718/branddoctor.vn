@@ -25,7 +25,7 @@
           >
             <div class="border-1 rounded-40rem flex gap-8rem py-8rem px-16rem">
               <p>
-                07/11/2021
+                08/01/2021
               </p>
             </div>
             <div class="border-1 rounded-40rem flex gap-8rem py-8rem px-16rem">
@@ -79,8 +79,11 @@
           >
             <img src="/ldp-ticket.jpg" class="mb-16rem">
             <p>
-              <span class="blueLight">Bạn được tặng miễn phí 1 vé talk show Thương hiệu cá nhân.
-                <a href="#dang-ky"><span class="blueLight font-semibold">Đăng ký ngay!</span></a></span>
+              <span class="blueLight">Bạn được tặng miễn phí 1 vé Talk Show Thương hiệu cá nhân.
+                <a
+                  href="#dang-ky"
+                  @click="isCheckout = true"
+                ><span class="blueLight font-semibold">Đăng ký ngay!</span></a></span>
             </p>
           </div>
           <BaseButton
@@ -89,13 +92,18 @@
             theme="dark"
             @mouseover="isTooltip = true"
             @mouseout="isTooltip = false"
+            @click="isCheckout = true"
           />
         </div>
         <p class="text-center hidden-des">
-          Bạn được tặng miễn phí 1 vé talk show Thương hiệu cá nhân.
+          Bạn được tặng miễn phí 1 vé Talk Show Thương hiệu cá nhân.
           <a href="#dang-ky"><span class="font-semibold">Đăng ký ngay!</span></a>
         </p>
-        <PageIndexCta theme="dark" title="Đăng ký chuyên đề" />
+        <PageIndexCta
+          theme="dark"
+          title="Đăng ký chuyên đề"
+          @click="isCheckout = true"
+        />
       </div>
     </div>
   </div>
@@ -146,13 +154,14 @@
 <script setup lang="ts">
 import Counter from '~/logic/Counter.ts'
 
+const isCheckout = inject('isCheckout')
 const digit = [
   { type: 'days', text: 'NGÀY' },
   { type: 'hours', text: 'GIỜ' },
   { type: 'minutes', text: 'PHÚT' },
   { type: 'seconds', text: 'GIÂY' },
 ]
-const counter = Counter('Dec 27 2021 09:00:00 GMT+0700 (Giờ Đông Dương)')
+const counter = Counter('Jan 8 2022 09:00:00 GMT+0700 (Giờ Đông Dương)')
 const isTooltip = ref(false)
 const overTooltip = () => {
   if ((isTooltip.value = true)) isTooltip.value = true

@@ -12,7 +12,7 @@
       <div class="border-1 rounded-40rem flex gap-8rem py-8rem px-16rem">
         <BaseIcon name="calendar" />
         <p>
-          07/11/2021
+          08/01/2021
         </p>
       </div>
       <div class="border-1 rounded-40rem flex gap-8rem py-8rem px-16rem">
@@ -50,7 +50,7 @@ const digit = [
   { type: 'minutes', text: 'PHÚT' },
   { type: 'seconds', text: 'GIÂY' },
 ]
-const counter = Counter('Dec 27 2021 09:00:00 GMT+0700 (Giờ Đông Dương)')
+const counter = Counter('Jan 8 2022 09:00:00 GMT+0700 (Giờ Đông Dương)')
 </script>
 <style lang="scss" scoped>
 @include size('small') {

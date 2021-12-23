@@ -40,30 +40,30 @@
 const why = [
   {
     title: 'Xây dựng 1 hình ảnh bản thân chuyên nghiệp',
-    desc: 'Từ đó bạn sẽ được săn đón, quý trọng như một báu vật...',
+    desc: 'Từ đó bạn sẽ được săn đón và quý trọng.',
     link: '',
   },
   {
     title: 'Cơ sở phát triển niềm tin của mọi người với chính mình',
-    desc:
-      'Từ đó xây dựng nên uy tín cho cả doanh nghiệp mà bạn đang làm việc hoặc sở hữu...',
+    desc: 'Khám phá điểm giúp bạn tỏa sáng và khắc họa chân dung của bạn.',
     link: '',
   },
   {
     title: 'Sẽ nhận ra điểm khác biệt của chính bản thân?',
-    desc: 'Thông qua con đường xây dựng THCN 5.0.',
+    desc:
+      'Từ đó xây dựng uy tín và tầm ảnh hưởng của bạn và cho cả doanh nghiệp bạn đang làm việc hoặc sở hữu.',
     link: '',
   },
   {
     title: 'Và một vài công thức bí mật...',
     desc:
-      'BDA sẽ giúp doanh chủ nắm trong tay bí mật tạo nên THCN 5.0 đặc sắc từ bí quyết độc đáo...',
+      'BDA sẽ giúp doanh chủ nắm trong tay bí mật tạo nên thương hiệu cá nhân 5.0 đặc sắc…',
     link: '',
   },
   {
-    title: '1 buổi talk show có sự góp mặt của hoa hậu Lê Âu Ngân Anh',
+    title: '1 buổi Talk Show có sự góp mặt mặt của Hoa hậu Lê Âu Ngân Anh',
     desc:
-      'Và hành trình xây dựng Thương hiệu cá nhân của chị trong 3 năm qua. ',
+      'Và hành trình xây dựng thương hiệu cá nhân của chị trong 3 năm qua. ',
     link: 'Tìm hiểu diễn giả',
   },
 ]

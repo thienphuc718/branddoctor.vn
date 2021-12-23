@@ -37,10 +37,11 @@
               <PageIndexProgress bar="#5584E5" inner="#DFE3E8" bg="white" />
             </div>
             <BaseButton
-              title="Tham gia talk show"
+              title="Tham gia Talk Show"
               size="big"
               theme="dark"
               class="w-288rem my-32rem"
+              @click="isCheckout = true"
             />
             <p class="font-semibold py-24rem border-t-1">
               Hoặc nếu bạn suy nghĩ lại, bạn vẫn có thể đăng ký chuyên đề đào
@@ -51,6 +52,7 @@
               size="big"
               title="Đăng ký chuyên đề"
               class="w-288rem mb-32rem"
+              @click="isCheckout = true"
             />
           </div>
         </div>
@@ -62,13 +64,14 @@
 <script setup lang="ts">
 import Counter from '~/logic/Counter.ts'
 
+const isCheckout = inject('isCheckout')
 const digit = [
   { type: 'days', text: 'NGÀY' },
   { type: 'hours', text: 'GIỜ' },
   { type: 'minutes', text: 'PHÚT' },
   { type: 'seconds', text: 'GIÂY' },
 ]
-const counter = Counter('Dec 27 2021 09:00:00 GMT+0700 (Giờ Đông Dương)')
+const counter = Counter('Jan 8 2022 09:00:00 GMT+0700 (Giờ Đông Dương)')
 </script>
 <style lang="scss" scoped>
 @include size('small') {

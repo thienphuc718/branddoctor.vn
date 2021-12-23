@@ -7,10 +7,10 @@
       <span class="yellowLight mb-24rem">
         Thương hiệu cá nhân 5.0 – Góc nhìn từ những điểm khác biệt</span>
     </h3>
-    <p class="flex gap-8rem hidden-mob">
-      <BaseIcon name="calendar" /><span class="w-121rem">Ngày tổ chức:</span><span class="font-medium">07/01/2021</span>
+    <p class="flex gap-8rem hidden-mob w-100%">
+      <BaseIcon name="calendar" /><span class="w-121rem">Ngày tổ chức:</span><span class="font-medium">08/01/2021</span>
     </p>
-    <p class="flex gap-8rem mb-24rem hidden-mob">
+    <p class="flex gap-8rem mb-24rem hidden-mob w-100%">
       <BaseIcon name="zoom" /><span class="w-121rem">Hình thức:</span><span>Zoom Meeting</span>
     </p>
     <p>
@@ -25,10 +25,14 @@
         theme="light"
         size="big"
         class="mt-24rem cta-box-cta min-w-272rem"
+        @click="isCheckout = true"
       />
     </div>
   </div>
 </template>
+<script setup lang="ts">
+const isCheckout = inject('isCheckout')
+</script>
 <style lang="scss" scoped>
 .cta-box-cta {
   color: $blueBasic;
