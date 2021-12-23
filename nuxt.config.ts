@@ -26,4 +26,5 @@ export default defineNuxtConfig({
       },
     },
   },
+  serverMiddleware: ['~/headers.ts'],
 })
