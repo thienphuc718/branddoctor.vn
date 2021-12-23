@@ -14,13 +14,10 @@
         class="question content-box p-24rem border-2 !border-#C4CDD5 rounded-4rem"
       >
         <p class="thick mb-8rem">
-          Lectus sit amet est placerat in egestas erat imperdiet in massa tempor
-          nec feugiat nisl?
+          {{ question.title }}
         </p>
         <p class="mb-8rem">
-          Penatibus et magnis dis parturient. Varius morbi enim nunc faucibus a
-          pellentesque sit amet. Quam nulla porttitor massa id neque aliquam
-          vestibulum morbi.
+          {{ question.desc }}
         </p>
         <div class="flex gap-16rem">
           <BaseIcon name="upvote" @click="toggleUp(index)" />

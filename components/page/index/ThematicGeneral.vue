@@ -46,7 +46,9 @@
             bản thân một cách chuyên nghiệp nhất.
           </p>
           <ul>
-            <p>Ứng dụng:</p>
+            <p class="-ml-12rem font-semibold">
+              Ứng dụng:
+            </p>
             <li>
               Công thức giúp bạn thu hút mọi người trên các trang mạng xã hội.
             </li>
@@ -75,6 +77,18 @@
 .thematic-content {
   p {
     margin-bottom: 24rem;
+  }
+  ul {
+    padding-left: 12rem;
+
+    li {
+      color: $inkBasic;
+      margin-bottom: 12rem;
+      &:before {
+        content: '+';
+        display: inline-block;
+      }
+    }
   }
 }
 </style>

@@ -6,6 +6,7 @@
         <PageIndexContentWhy class="border-b-1 pb-64rem mb-48rem" />
         <PageIndexContentAudience class="border-b-1 pb-64rem mb-48rem" />
         <PageIndexThematicGeneral class="border-b-1 pb-64rem mb-48rem" />
+        <PageIndexContentResult class="border-b-1 pb-64rem mb-48rem" />
         <PageIndexThematicContent class="border-b-1 pb-64rem mb-48rem" />
         <PageIndexThematicSpeaker class=" mb-48rem" />
       </div>

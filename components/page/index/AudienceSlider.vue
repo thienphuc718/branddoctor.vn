@@ -9,9 +9,9 @@
         <BaseIcon :name="`human-${index + 1}`" class="icon" />
         <div class="col">
           <p class="font-semibold leading-1.4em mb-8rem">
-            <span class="blueLight">Cá nhân có nhu cầu xây dựng thương hiệu cá nhân</span>
+            <span class="blueLight">{{ slide.title }}</span>
           </p>
-          <p>Để phát triển doanh nghiệp của chính mình trong tương lai.</p>
+          <p>{{ slide.desc }}</p>
         </div>
       </div>
     </div>

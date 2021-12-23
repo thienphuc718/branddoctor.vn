@@ -8,7 +8,7 @@
     <div class="heading-2">
       <h2 class="pb-32rem border-b-1 mb-32rem mt-40rem">
         <span class="carolinaLight font-semibold">
-          Tại sao bạn nên tham gia chương trình này?
+          Tôi sẽ làm được gì sau chuyên đề?
         </span>
       </h2>
       <div class="col gap-32rem">
@@ -39,37 +39,18 @@
 <script setup lang="ts">
 const why = [
   {
-    title: 'Xây dựng 1 hình ảnh bản thân chuyên nghiệp',
+    title: 'Phân tích SWOT của bản thân',
     desc: 'Biết được đâu là điểm mạnh và cơ hội của mình nhằm tận dụng chúng.',
     link: '',
   },
   {
-    title: 'Cơ sở phát triển niềm tin của mọi người với chính mình',
-    desc:
-      'BDA sẽ giúp bạn nắm trong tay bí mật tạo nên thương hiệu cá nhân 5.0 đặc sắc.',
+    title: 'Định hình hình ảnh bản thân mong muốn ',
+    desc: 'Khám phá điểm giúp bạn tỏa sáng và khắc họa chân dung của bạn.',
     link: '',
   },
   {
-    title: 'Sẽ nhận ra điểm khác biệt của chính bản thân?',
-    desc: 'Thông qua con đường xây dựng thương hiệu cá nhân 5.0.',
-    link: '',
-  },
-  {
-    title: 'Và một vài công thức bí mật...',
-    desc:
-      'BDA sẽ giúp doanh chủ nắm trong tay bí mật tạo nên thương hiệu cá nhân 5.0 đặc sắc…',
-    link: '',
-  },
-  {
-    title: '1 buổi Talk Show có sự góp mặt mặt của Hoa hậu Lê Âu Ngân Anh',
-    desc:
-      'Và hành trình xây dựng thương hiệu cá nhân của chị trong 3 năm qua. ',
-    link: 'Tìm hiểu diễn giả',
-  },
-  {
-    title: '4 phiên thực hành trong 4 buổi học',
-    desc:
-      'Với tiêu chí làm để học, chuyên đề lồng ghép cho mỗi buổi học đều có thể thực hành.',
+    title: 'Kế hoạch lan tỏa hình ảnh thương hiệu của bản thân',
+    desc: 'Từ đó xây dựng tầm ảnh hưởng của bạn.',
     link: '',
   },
 ]
