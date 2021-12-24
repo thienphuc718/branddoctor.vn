@@ -46,7 +46,7 @@ const why = [
   {
     title: 'Cơ sở phát triển niềm tin của mọi người với chính mình',
     desc:
-      'BDA sẽ giúp bạn nắm trong tay bí mật tạo nên thương hiệu cá nhân 5.0 đặc sắc.',
+      'Từ đó xây dựng nên uy tín cho cả doanh nghiệp mà bạn đang làm việc hoặc sở hữu.',
     link: '',
   },
   {
@@ -57,7 +57,7 @@ const why = [
   {
     title: 'Và một vài công thức bí mật...',
     desc:
-      'BDA sẽ giúp doanh chủ nắm trong tay bí mật tạo nên thương hiệu cá nhân 5.0 đặc sắc…',
+      'BDA sẽ giúp bạn nắm trong tay bí mật tạo nên thương hiệu cá nhân 5.0 đặc sắc.',
     link: '',
   },
   {

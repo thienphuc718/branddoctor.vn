@@ -62,7 +62,7 @@
                 :data-required="field.required"
                 type="text"
                 :name="field.name"
-                placeholder="Nguyễn Văn Anh"
+                :placeholder="field.placeholder"
               >
             </label>
           </p>
@@ -98,7 +98,7 @@
                 :data-required="field.required"
                 type="text"
                 :name="field.name"
-                placeholder="Nguyễn Văn Anh"
+                :placeholder="field.placeholder"
               >
             </label>
           </p>
@@ -174,7 +174,7 @@ watchEffect(() => {
             label: 'Quy mô tổ chức*',
             required: true,
             name: 'your-scale',
-            placeholder: 'Nhập số lượng nhân viên tương ứng',
+            placeholder: 'Chọn số lượng nhân viên tương ứng',
             width: '50',
             class: '',
           },

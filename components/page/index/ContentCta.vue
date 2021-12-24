@@ -39,15 +39,16 @@
           <PageIndexProgress bar="#5584E5" inner="#DFE3E8" bg="white" />
         </div>
         <div class="col gap-12rem mt-8rem">
-          <PageIndexCta
-            theme="light"
-            title="Đăng ký học chính thức"
+          <BaseButton
+            theme="dark"
+            size="regular"
+            title="Đăng ký Talk Show"
             @click="isCheckout = true"
           />
-          <BaseButton
-            title="Tham gia chuyên đề"
+          <PageIndexCta
+            title="Đăng ký chuyên đề"
             size="regular"
-            theme="dark"
+            theme="light"
             @click="isCheckout = true"
           />
         </div>
@@ -124,7 +125,7 @@ const info = [
   {
     icon: 'calendar-day',
     title: 'Ngày học:',
-    desc: 'Thứ 7 (hoặc CN)',
+    desc: 'Thứ 7 & Chủ nhật',
     bold: false,
   },
   { icon: 'zoom', title: 'Hình thức:', desc: 'Zoom Meeting', bold: false },

@@ -109,16 +109,16 @@ const speaker = [
       'Đồng hành cùng nhiều doanh nghiệp lớn như iSCHOOL (NHG), Pierre Cardin, Savico, LG Vina Cosmetics,v.v với vai trò Giám đốc cấp cao và cố vấn chiến lược.',
       'Đến năm 2020, ông sáng lập Brand Doctor Group với mong muốn giúp doanh nghiệp Việt phát triển trường tồn trên con đường xây dựng thương hiệu và khiến thanh niên không phải trăn trở trên hành trình kiến tạo sự nghiệp của mình. ',
     ],
-    desc2: 'Phương pháp giảng dạy',
-    desc2Content: [
-      'Hiện tại ông Nguyễn Khánh Trung còn là Thạc Sĩ đang thực hiện công tác giảng dạy tại trường Đại học Kinh Tế - Luật. Ông đã đóng góp nhiều vào việc thành lập câu lạc bộ hỗ trợ dẫn dắt đội ngũ trẻ là các sinh viên đang có ý định khởi nghiệp. Câu lạc bộ thu hút hơn 10.000 sinh viên mỗi năm và sau sáu năm đã trở thành tổ chức nổi tiếng với các sinh viên và doanh nghiệp.',
-    ],
+    // desc2: 'Phương pháp giảng dạy',
+    // desc2Content: [
+    //   'Hiện tại ông Nguyễn Khánh Trung còn là Thạc Sĩ đang thực hiện công tác giảng dạy tại trường Đại học Kinh Tế - Luật. Ông đã đóng góp nhiều vào việc thành lập câu lạc bộ hỗ trợ dẫn dắt đội ngũ trẻ là các sinh viên đang có ý định khởi nghiệp. Câu lạc bộ thu hút hơn 10.000 sinh viên mỗi năm và sau sáu năm đã trở thành tổ chức nổi tiếng với các sinh viên và doanh nghiệp.',
+    // ],
   },
   {
     name: 'Hoa hậu Lê Âu Ngân Anh',
     img: 'lana',
     position: 'Giảng viên Đại học Hoa Sen',
-    special: '(Khách mời buổi 1)',
+    special: '',
     link: { Website: '', Facebook: '', Youtube: '' },
     desc1:
       'Hoa hậu Lê Âu Ngân Anh – Người phụ nữ thành công từ đấu trường nhan sắc đến đấu trường tri thức',
@@ -127,12 +127,12 @@ const speaker = [
       'Đối mặt với nhiều tai tiếng sau khi đăng quang, cô lựa chọn hoàn thiện bản thân trên con đường học vấn, tốt nghiệp Thạc sĩ ngành Quản trị Sự Kiện Quốc Tế tại Đại học Salford (Anh).',
       'Thành công chứng minh bản thân là một người phụ nữ “tài sắc vẹn toàn”, năm 2021, cô trở thành giảng viên tại Đại học Hoa Sen và được bổ nhiệm làm Giám đốc quản trị trẻ nhất của trường.',
     ],
-    desc2: 'Hành trình phát triển',
-    desc2Content: [
-      'Lê Âu Ngân Anh đã đăng quang Hoa hậu Đại dương Việt Nam 2017 và Á hậu 4 Miss Intercontinental 2018 khi còn rất trẻ, tuy nhiên cô đã lựa chọn tập trung hoàn thiện bản thân trên con đường học vấn. Không lâu sau cô tốt nghiệp Thạc sĩ ngành Quản trị Sự Kiện Quốc Tế tại Đại học Salford (Anh)',
-      'Hơn nữa, Lê Âu Ngân Anh còn có cho mình một kênh youtube không phải vì nhu cầu nổi tiếng mà phục vụ cho việc giảng dạy, đồng thời là nơi các bạn trẻ được cô truyền cảm hứng và tạo động lực.',
-      'Cô đã chứng minh được khẳng định được khẳng định của bản thân “tôi không muốn nổi tiếng nhưng sáo rỗng”, thể hiện qua việc vào lúc mới đăng quang hoa hậu cô đã đối mặt nhiều “tai tiếng” với “xuất phát điểm là 0% người ủng hộ”, và không ít những hoài nghi về nhan sắc và thực lực của cô. Tuy nhiên đến ngày hôm nay nàng hậu đang dần hoàn toàn chinh phục người hâm mộ và số lượng người yêu thích cô ngày càng tăng. Và có nhiều người bắt đầu công nhận cô là một trong những mỹ nhân đại diện cho “tài sắc vẹn toàn”.',
-    ],
+    // desc2: 'Hành trình phát triển',
+    // desc2Content: [
+    //   'Lê Âu Ngân Anh đã đăng quang Hoa hậu Đại dương Việt Nam 2017 và Á hậu 4 Miss Intercontinental 2018 khi còn rất trẻ, tuy nhiên cô đã lựa chọn tập trung hoàn thiện bản thân trên con đường học vấn. Không lâu sau cô tốt nghiệp Thạc sĩ ngành Quản trị Sự Kiện Quốc Tế tại Đại học Salford (Anh)',
+    //   'Hơn nữa, Lê Âu Ngân Anh còn có cho mình một kênh youtube không phải vì nhu cầu nổi tiếng mà phục vụ cho việc giảng dạy, đồng thời là nơi các bạn trẻ được cô truyền cảm hứng và tạo động lực.',
+    //   'Cô đã chứng minh được khẳng định được khẳng định của bản thân “tôi không muốn nổi tiếng nhưng sáo rỗng”, thể hiện qua việc vào lúc mới đăng quang hoa hậu cô đã đối mặt nhiều “tai tiếng” với “xuất phát điểm là 0% người ủng hộ”, và không ít những hoài nghi về nhan sắc và thực lực của cô. Tuy nhiên đến ngày hôm nay nàng hậu đang dần hoàn toàn chinh phục người hâm mộ và số lượng người yêu thích cô ngày càng tăng. Và có nhiều người bắt đầu công nhận cô là một trong những mỹ nhân đại diện cho “tài sắc vẹn toàn”.',
+    // ],
   },
 ]
 </script>
