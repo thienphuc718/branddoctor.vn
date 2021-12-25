@@ -60,7 +60,10 @@
             <p class="pl-12rem w-33%">
               <span class="text-18rem font-medium inkLight">{{
                 currency(ticket.price)
-              }}</span>
+                  .toString()
+                  .replaceAll(',', '.')
+              }}
+                đ</span>
             </p>
             <div class="pl-12rem w-33%">
               <p class="h-32rem w-32rem bg-inkLightest rounded-4rem center">
@@ -70,7 +73,10 @@
             <p class="w-33%  text-right  hidden-mob">
               <span class="text-18rem font-medium blueLight">{{
                 currency(ticket.price * cloneIndex)
-              }}</span>
+                  .toString()
+                  .replaceAll(',', '.')
+              }}
+                đ</span>
             </p>
           </div>
         </div>
@@ -104,8 +110,7 @@ const ticket = [
 const cloneIndex = inject('cloneIndex')
 const currency = function(number) {
   return new Intl.NumberFormat('ja-JP', {
-    style: 'currency',
-    currency: 'VND',
+    style: 'decimal',
     minimumFractionDigits: 0,
   }).format(number)
 }
