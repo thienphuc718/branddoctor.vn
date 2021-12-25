@@ -28,6 +28,27 @@ onMounted(() => {
     else document.querySelector('html').style.overflow = ''
   })
 })
+
+useMeta({
+  meta: [
+    {
+      property: 'og:url',
+      content: 'https://developers.zalo.me/',
+    },
+    {
+      property: 'og:title',
+      content: '',
+    },
+    {
+      property: 'og:image',
+      content: '',
+    },
+    {
+      property: 'og:description',
+      content: '',
+    },
+  ],
+})
 </script>
 
 <style lang="css" scoped></style>

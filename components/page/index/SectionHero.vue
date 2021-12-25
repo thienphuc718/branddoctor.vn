@@ -1,5 +1,5 @@
 <template>
-  <div class="dark p-24rem section-hero relative pt-94rem">
+  <div class="dark p-24rem section-hero relative pt-94rem min-h-100vh col">
     <div
       id="myVideo"
       class="absolute left-0rem top-0rem -z-1 min-w-100vw min-h-100%"
@@ -10,7 +10,7 @@
     </div>
     <PageIndexSectionHeroHeader />
     <div
-      class="row content-row center p-80rem gap-48rem content-box heading-box"
+      class="row content-row center p-80rem gap-48rem content-box heading-box flex-grow"
     >
       <img src="/ldp-hero-poster.jpg" width="239" height="298" alt="">
       <div class="col items-start">

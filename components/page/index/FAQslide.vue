@@ -62,6 +62,7 @@ onMounted(() => {
 }
 .slide {
   max-width: calc(100% / 4 - 8rem * 3 / 4);
+  min-width: calc(100% / 4 - 8rem * 3 / 4);
 }
 @include size('small') {
   .slider {

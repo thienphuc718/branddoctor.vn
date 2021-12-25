@@ -45,7 +45,7 @@ onMounted(() => {
   position: relative;
   padding-right: 16rem;
   &.dark {
-    border-color: white;
+    border-color: transparent;
     &:hover {
       border-color: $blueLight;
       background: transparent;

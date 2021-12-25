@@ -4,7 +4,6 @@
     :style="{ '--bar': props.bar, '--inner': props.inner, '--bg': props.bg }"
   >
     <div class="progress">
-      <div class="bar" />
       <div class="inner" />
     </div>
     <div class="col">
@@ -24,25 +23,22 @@ const props = defineProps({
 </script>
 <style lang="scss" scoped>
 .progress {
-  border-radius: 50%;
-  height: 32rem;
   width: 32rem;
-  position: relative;
-  div {
-    position: absolute;
-    left: calc(50% - 16rem);
-    top: calc(50% - 16rem);
-    width: 32rem;
-    height: 32rem;
+  height: 32rem;
+  display: block;
+  border-radius: 50%;
+  background-color: var(--bar);
+  float: left;
+  // 10% = 126deg = 90 + ( 360 * .1 )
+  background-image: linear-gradient(198deg, transparent 50%, var(--inner) 50%),
+    linear-gradient(90deg, var(--inner) 50%, transparent 50%);
+  .inner {
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
-    &.bar {
-      background: linear-gradient(90deg, var(--inner) 70%, var(--bar) 70%);
-    }
-    &.inner {
-      background: var(--bg);
-      transform: scale(0.85);
-      transform-origin: center;
-    }
+    background: var(--bg);
+    transform: scale(0.85);
+    transform-origin: center;
   }
 }
 </style>
