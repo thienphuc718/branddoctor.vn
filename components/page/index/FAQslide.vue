@@ -7,7 +7,7 @@
         </span>
       </h2>
       <div class="flex items-center gap-12rem hidden-mob">
-        <p>1/10</p>
+        <p>{{ hello.slideIndex.value + 1 }}/10</p>
         <BaseNav fill="white" stroke="#5584E5" class="gap-8rem">
           <BaseIcon
             name="cheviron-prev"
@@ -25,7 +25,7 @@
     <div id="faq-slider" class="slider">
       <div class="track flex gap-8rem">
         <img
-          v-for="slide in 4"
+          v-for="slide in 10"
           :src="`/ldp-slider-${slide}.png`"
           width="275.5"
           height="210"
@@ -39,7 +39,7 @@
 import Slider from '~/logic/slider.ts'
 import { mediaMobile } from '~/logic/mediaQuery.ts'
 
-const hello = Slider('#faq-slider', 1)
+const hello = Slider('#faq-slider', 2)
 onMounted(() => {
   if (mediaMobile.matches) {
     setInterval(() => {

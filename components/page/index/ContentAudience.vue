@@ -37,7 +37,7 @@
 import Slider from '~/logic/slider.ts'
 import { mediaMobile } from '~/logic/mediaQuery.ts'
 
-const hello = Slider('#audienceSlider', 2)
+const hello = Slider('#audienceSlider', 1)
 onMounted(() => {
   if (mediaMobile.matches) {
     setInterval(() => {

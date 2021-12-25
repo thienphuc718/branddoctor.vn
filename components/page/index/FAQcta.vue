@@ -12,24 +12,70 @@
           thương hiệu cá nhân 5.0”. Đăng ký ngay. Chúng tôi sẽ gửi qua email
           bạn.
         </p>
-        <div class="flex gap-12rem">
+        <form
+          id="book-form"
+          class="flex gap-12rem"
+          action="https://sever.branddoctorgroup.com/wp-json/contact-form-7/v1/contact-forms/12067/feedback"
+          method="post"
+          @submit.prevent="submitHandler"
+        >
           <input
-            type="text"
+            type="email"
             placeholder="example@email.com"
             class="py14rem px-14rem rounded-4rem border-none w-60%"
+            name="your-email"
           >
           <button
             class="bg-white border-none center w-65rem rounded-4rem form-btn"
           >
-            <BaseIcon name="send" />
+            <BaseIcon :name="btnIcon" type="submit" form="book-form" />
           </button>
-        </div>
+        </form>
       </div>
     </div>
+    <BasePopup v-if="isPopupActive">
+      <div class="center heading-box min-h-500rem bg-blueLight">
+        <div class="heading-2">
+          <h2 style="max-width:500rem; text-align:center">
+            <span class="white">
+              {{ popupContent }}
+            </span>
+          </h2>
+        </div>
+      </div>
+    </BasePopup>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import axios from 'axios'
+import formValidate from '~/logic/formValidate.ts'
+
+const popupContent = ref('')
+const isPopupActive = ref(false)
+const btnIcon = ref('send')
+provide('isPopupActive', isPopupActive)
+
+const submitHandler = async(e) => {
+  if (formValidate(e)) {
+    const formElement = e.target
+    const { action, method } = formElement
+    const body = new FormData(formElement)
+    btnIcon.value = 'loading'
+
+    axios
+      .post(action, body)
+      .then((response) => {
+        isPopupActive.value = true
+        popupContent.value = response.data.message
+        btnIcon.value = 'send'
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .cta-box {

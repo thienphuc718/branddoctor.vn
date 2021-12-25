@@ -1,13 +1,13 @@
 <template>
   <div class="col items-center w-708rem content-box heading-box">
     <div class="flex justify-center mb-80rem program-name">
-      <p class="whitespace-nowrap">
+      <p class="whitespace-nowrap hidden-mob">
         Khóa học: Bác sĩ Thương hiệu 1 sao
       </p>
-      <p class="whitespace-nowrap px-8rem">
+      <p class="whitespace-nowrap px-8rem hidden-mob">
         <span> • </span>
       </p>
-      <p class="thick whitespace-nowrap">
+      <p class="thick whitespace-nowrap hidden-mob">
         <span class="blueLight">Chuyên đề 01: Thương hiệu cá nhân 5.0 – Góc nhìn từ nh...</span>
       </p>
     </div>
