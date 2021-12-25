@@ -1,10 +1,5 @@
 <template>
-  <div class="content-why">
-    <div class="heading-1">
-      <h2 class="inkBasic">
-        <span class="hidden-des flex">Về chuyên đề</span>
-      </h2>
-    </div>
+  <div id="why" class="content-why">
     <div class="heading-2">
       <h2 class="pb-32rem border-b-1 mb-32rem mt-40rem">
         <span class="carolinaLight font-medium">
@@ -40,7 +35,7 @@
 const why = [
   {
     title: 'Xây dựng 1 hình ảnh bản thân chuyên nghiệp',
-    desc: 'Biết được đâu là điểm mạnh và cơ hội của mình nhằm tận dụng chúng.',
+    desc: 'Từ đó bạn sẽ được săn đón và quý trọng.',
     link: '',
   },
   {
@@ -68,8 +63,7 @@ const why = [
   },
   {
     title: '4 phiên thực hành trong 4 buổi học',
-    desc:
-      'Với tiêu chí làm để học, chuyên đề lồng ghép cho mỗi buổi học đều có thể thực hành.',
+    desc: 'Với tiêu chí làm để học, mỗi buổi học bạn đều có thể thực hành',
     link: '',
   },
 ]

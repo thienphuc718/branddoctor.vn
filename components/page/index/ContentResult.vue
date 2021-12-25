@@ -1,12 +1,7 @@
 <template>
   <div class="content-why">
-    <div class="heading-1">
-      <h2 class="inkBasic">
-        <span class="hidden-des flex">Về chuyên đề</span>
-      </h2>
-    </div>
     <div class="heading-2">
-      <h2 class="pb-32rem border-b-1 mb-32rem mt-40rem">
+      <h2 class="pb-32rem border-b-1 mb-32rem">
         <span class="carolinaLight font-medium">
           Tôi sẽ làm được gì sau chuyên đề?
         </span>

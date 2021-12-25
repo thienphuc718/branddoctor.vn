@@ -1,7 +1,10 @@
 <template>
   <div class="dark p-24rem section-hero relative pt-94rem">
-    <div id="myVideo" class="absolute left-0rem top-0rem -z-1 min-w-100vw">
-      <video autoplay muted loop class="min-w-100vw min-h-100vh">
+    <div
+      id="myVideo"
+      class="absolute left-0rem top-0rem -z-1 min-w-100vw min-h-100%"
+    >
+      <video autoplay muted loop class="min-w-100vw min-h-100%">
         <source src="/trailer.mp4" type="video/mp4">
       </video>
     </div>
@@ -68,9 +71,11 @@
       </div>
     </div>
     <div class="row content-box items-center justify-between">
-      <div class="row items-center hidden-mob">
-        <BaseIcon name="play-btn" class="mr-12rem" />
-        <p>Xem trailer</p>
+      <div class="hidden-mob">
+        <a href="#trailer" class="row items-center">
+          <BaseIcon name="play-btn" class="mr-12rem" />
+          <p>Xem trailer</p>
+        </a>
       </div>
       <div class="row gap-24rem">
         <div
@@ -132,6 +137,9 @@
 @include size('small') {
   .dark.section-hero {
     padding-bottom: 80rem;
+    video {
+      min-height: 200vh;
+    }
     .content-row {
       padding-left: 0;
       padding-right: 0;

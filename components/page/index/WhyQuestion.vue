@@ -1,6 +1,6 @@
 <template>
-  <div class="col items-center w-768rem content-box heading-box">
-    <div class="flex justify-center mb-80rem">
+  <div class="col items-center w-708rem content-box heading-box">
+    <div class="flex justify-center mb-80rem program-name">
       <p class="whitespace-nowrap">
         Khóa học: Bác sĩ Thương hiệu 1 sao
       </p>
@@ -8,7 +8,7 @@
         <span> • </span>
       </p>
       <p class="thick whitespace-nowrap">
-        <span class="blueLight">Chuyên đề 01: Thương hiệu cá nhân 5.0 - Góc nhìn từ nh...</span>
+        <span class="blueLight">Chuyên đề 01: Thương hiệu cá nhân 5.0 – Góc nhìn từ nh...</span>
       </p>
     </div>
     <div class="col items-center gap-56rem">

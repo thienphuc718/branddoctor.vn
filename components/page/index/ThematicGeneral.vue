@@ -1,5 +1,5 @@
 <template>
-  <div class="thematic-general relative">
+  <div id="general" class="thematic-general relative">
     <div class="heading-2">
       <h2 class="mb-24rem">
         <span class="carolinaLight font-medium">

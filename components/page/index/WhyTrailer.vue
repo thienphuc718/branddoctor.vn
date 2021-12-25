@@ -1,5 +1,6 @@
 <template>
   <iframe
+    id="trailer"
     src="https://www.youtube.com/embed/6dQT3FVslVQ"
     title="YouTube video player"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

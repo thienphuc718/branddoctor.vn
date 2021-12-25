@@ -31,6 +31,7 @@
 @include size('small') {
   .padding-all {
     padding-top: 0;
+    padding-bottom: 0;
 
     .talkshow-content {
       flex-direction: column-reverse;

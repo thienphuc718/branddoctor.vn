@@ -7,7 +7,7 @@
       <BaseIcon name="search" />
       <input
         type="text"
-        placeholder="Tìm kiếm khóa học, giảng viên,...."
+        placeholder="Tìm kiếm khóa học, giảng viên..."
         class="italic bg-transparent border-0 w-300rem hidden-mob"
       >
     </div>

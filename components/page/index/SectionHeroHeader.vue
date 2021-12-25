@@ -85,15 +85,11 @@ const counter = Counter('Jan 8 2022 09:00:00 GMT+0700 (Giờ Đông Dương)')
 }
 </style>
 <style lang="scss">
-[data-v-540dbd8a] {
+.icon-calendar,
+.icon-zoom {
   svg {
     path {
       fill: white;
-    }
-  }
-  .icon-human-chat {
-    path {
-      fill: $yellowBasic;
     }
   }
 }

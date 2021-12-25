@@ -22,7 +22,7 @@
           :key="tab"
           class="tab-heading flex gap-12rem items-center flex-1  py-24rem px-48rem"
           :class="{ 'item-active': activeTab.heading == tab.heading }"
-          @click="activeTab = tab"
+          @click="changeTab(tab, index)"
         >
           <div
             class="dark h-32rem w-32rem rounded-50% bg-skyBasic center indexCont"
@@ -93,6 +93,10 @@ const activeTab = ref(tab[0])
 const popupContent = ref('')
 const isPopupActive = ref(false)
 provide('isPopupActive', isPopupActive)
+const changeTab = (tab, index) => {
+  if (index == 1)
+    document.querySelector('.nextBtn').click()
+}
 const fieldsOne = ref([
   {
     number: '',

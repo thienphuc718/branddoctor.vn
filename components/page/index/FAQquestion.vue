@@ -1,5 +1,5 @@
 <template>
-  <div class="padding-all">
+  <div id="faq" class="padding-all">
     <div class="heading-2 flex items-start justify-between ">
       <h2 class="mb-24rem">
         <span class="carolinaLight font-medium">
@@ -56,7 +56,7 @@ const question = [
     down: false,
   },
   {
-    title: 'Chuyên đề này trị giá bao nhiêu?',
+    title: 'Học phí của chuyên đề này là bao nhiêu?',
     desc:
       'Mức học phí cho chuyên đề này là 5.000.000 VNĐ/học viên. Khi đăng ký học theo nhóm 3 người, nhóm sẽ được giảm 10% học phí. Và khi đăng ký học theo nhóm 5 người, nhóm sẽ được giảm 20% học phí.',
     up: false,

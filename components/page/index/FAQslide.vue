@@ -23,7 +23,7 @@
         </BaseNav>
       </div>
     </div>
-    <div class="slider">
+    <div id="faq-slider" class="slider">
       <div class="track flex gap-8rem">
         <img
           v-for="slide in 4"
@@ -40,7 +40,7 @@
 import Slider from '~/logic/slider.ts'
 import { mediaMobile } from '~/logic/mediaQuery.ts'
 
-const hello = Slider('.slider[data-v-f70604a6]', 1)
+const hello = Slider('#faq-slider', 1)
 onMounted(() => {
   if (mediaMobile.matches) {
     setInterval(() => {
@@ -60,10 +60,17 @@ onMounted(() => {
     rgba(2, 0, 36, 0) 100%
   );
 }
+.slide {
+  max-width: calc(100% / 4 - 8rem * 3 / 4);
+}
 @include size('small') {
   .slider {
     .track {
       gap: 24rem;
+      .slide {
+        max-width: 100%;
+        min-width: 100%;
+      }
     }
   }
 }

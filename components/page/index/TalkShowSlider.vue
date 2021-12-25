@@ -129,7 +129,7 @@ const isPause = ref(false)
 onMounted(() => {
   setInterval(() => {
     if (!isPause.value && !mediaMobile.matches) hello.slideNext()
-  }, 3000)
+  }, 2000)
 })
 </script>
 <style lang="scss" scoped>

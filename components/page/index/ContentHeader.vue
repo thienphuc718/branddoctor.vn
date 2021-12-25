@@ -8,9 +8,10 @@
         v-for="menu in menu"
         :key="menu"
         class="font-medium menu"
-        :class="{ 'item-active': activeMenu === menu }"
+        :class="{ 'item-active': activeMenu.title === menu.title }"
+        @click="menu.callback"
       >
-        <span class="inkLightest">{{ menu }}</span>
+        <span class="inkLightest">{{ menu.title }}</span>
       </p>
     </div>
 
@@ -23,17 +24,82 @@
       </div>
       <PageIndexProgress bar="#5584E5" inner="#DFE3E8" bg="white" />
       <div class="flex gap-16rem items-center">
-        <PageIndexCta theme="light" title="Tham gia Talk Show" />
-        <BaseButton title="Đăng ký chuyên đề" size="regular" theme="dark" />
+        <PageIndexCta
+          theme="light"
+          title="Đăng ký chuyên đề"
+          @click="isCheckout = true"
+        />
+        <BaseButton
+          title="Tham gia Talk Show"
+          size="regular"
+          theme="dark"
+          @click="isCheckout = true"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { getWindow, getDocument } from 'ssr-window'
 import Counter from '~/logic/Counter.ts'
 
-const menu = ['Tại sao', 'Tổng quan', 'Chương trình', 'Chuyên gia', 'FAQ']
+const window = getWindow()
+const document = getDocument()
+
+const isCheckout = inject('isCheckout')
+
+const menu = [
+  {
+    title: 'Tại sao',
+    callback: () => {
+      document.getElementById('why').scrollIntoView({ behavior: 'smooth' })
+    },
+  },
+  {
+    title: 'Tổng quan',
+    callback: () => {
+      document.getElementById('general').scrollIntoView({ behavior: 'smooth' })
+    },
+  },
+  {
+    title: 'Chương trình',
+    callback: () => {
+      document.getElementById('program').scrollIntoView({ behavior: 'smooth' })
+    },
+  },
+  {
+    title: 'Chuyên gia',
+    callback: () => {
+      document.getElementById('speaker').scrollIntoView({ behavior: 'smooth' })
+    },
+  },
+  {
+    title: 'FAQ',
+    callback: () => {
+      document.getElementById('faq').scrollIntoView({ behavior: 'smooth' })
+    },
+  },
+]
+
+const scrollMenu = () => {
+  const sections = ['why', 'general', 'program', 'speaker', 'faq']
+
+  sections.forEach((name, index) => {
+    const section = document.getElementById(name)
+    const sectionBounding = section.getBoundingClientRect()
+    if (sectionBounding.top < 0 && sectionBounding.bottom > 0)
+      activeMenu.value = menu[index]
+  })
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', scrollMenu)
+})
+onUnmounted(() => {
+  window.removeEventListener('scroll', scrollMenu)
+})
+
 const activeMenu = ref(menu[0])
 const isHeaderActive = inject('isHeaderActive')
 const isCtaActive = inject('isCtaActive')

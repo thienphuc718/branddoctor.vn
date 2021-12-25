@@ -12,9 +12,9 @@
         </p>
       </div>
       <div
-        class="light p-20rem !rounded-8rem base-shadow col gap-8rem border-dashed border-1"
+        class="light p-20rem !rounded-8rem base-shadow col gap-8rem border-dashed border-1 cta-info"
       >
-        <div v-for="info in info" :key="info" class="flex gap-90rem">
+        <div v-for="info in info" :key="info" class="flex justify-between">
           <p class="flex">
             <BaseIcon :name="info.icon" class="mr-8rem" />
             {{ info.title }}
@@ -65,7 +65,7 @@
           src="/ldp-content-cta-img1.png"
           width="200"
           height="200"
-          class="absolute -right-40rem top-8rem"
+          class="absolute -right-40rem top-0rem w-60%"
         >
       </div>
     </div>
@@ -103,6 +103,15 @@
       &:last-child {
         font-size: 8rem;
       }
+    }
+  }
+}
+</style>
+<style lang="scss">
+.cta-info {
+  svg {
+    path {
+      fill: black;
     }
   }
 }

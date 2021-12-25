@@ -1,5 +1,5 @@
 <template>
-  <div class="col thematic-content">
+  <div id="speaker" class="col thematic-content">
     <div class="heading-2">
       <h2 class="mb-24rem">
         <span class="carolinaLight font-medium">
@@ -47,17 +47,16 @@
                   class="hidden-des"
                 >
                 <div class="row gap-12rem">
-                  <div
+                  <a
                     v-for="(social, name, index) in speaker.link"
+                    :href="speaker.link[name]"
                     class="social flex gap-8rem py-8rem px-12rem border-1 rounded-4rem"
                   >
-                    <BaseIcon name="website" />
+                    <BaseIcon :name="name" />
                     <p>
-                      <a :href="speaker.link[name]"><span class="inkLighter font-semibold">{{
-                        name
-                      }}</span></a>
+                      <span class="inkLighter font-semibold">{{ name }}</span>
                     </p>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -97,7 +96,7 @@
 <script setup lang="ts">
 const speaker = [
   {
-    name: 'TS. Nguyễn Khánh Trung',
+    name: 'Tiến sĩ Nguyễn Khánh Trung',
     img: 'nkt',
     position: 'Viện trưởng Brand Doctor Academy',
     special: '',
@@ -158,6 +157,10 @@ const speaker = [
 
 @include size('small') {
   .speaker {
+    &:first-child {
+      padding-top: 0;
+    }
+
     .speaker-header {
       flex-direction: column-reverse;
       align-items: flex-start;

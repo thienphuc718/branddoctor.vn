@@ -1,5 +1,5 @@
 <template>
-  <div class="col thematic-content">
+  <div id="program" class="col thematic-content">
     <div class="heading-2">
       <h2 class="mb-24rem">
         <span class="carolinaLight font-medium">
@@ -7,7 +7,7 @@
         </span>
       </h2>
     </div>
-    <div class="row justify-between">
+    <div class="row justify-between hidden-mob">
       <p class="flex gap-8rem">
         <span v-for="content in content" :key="content" class="inkLighter">{{
           content
@@ -36,7 +36,7 @@
           <p class="min-w-55rem">
             <span class="font-semibold blueLight">Buổi {{ index + 1 }}.</span>
           </p>
-          <p class="font-semibold mr-20rem">
+          <p class="font-semibold flex-grow">
             <span
               v-if="accord.title.before.length"
               class="before inkLightest mr-0.2em"

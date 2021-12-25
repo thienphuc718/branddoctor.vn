@@ -12,10 +12,10 @@
           <p class="w-49%">
             Tất cả
           </p>
-          <p class="w-17% hidden-mob">
+          <p class="pl-12rem w-17% hidden-mob">
             Đơn giá
           </p>
-          <p class="w-17% hidden-mob">
+          <p class="pl-12rem w-17% hidden-mob">
             Số lượng
           </p>
           <p class="w-17%  text-right hidden-mob">
@@ -57,12 +57,12 @@
             </div>
           </div>
           <div class="flex ticket-price flex-grow items-center">
-            <p class="w-33%">
+            <p class="pl-12rem w-33%">
               <span class="text-18rem font-medium inkLight">{{
                 currency(ticket.price)
               }}</span>
             </p>
-            <div class="w-33%">
+            <div class="pl-12rem w-33%">
               <p class="h-32rem w-32rem bg-inkLightest rounded-4rem center">
                 <span class="font-semibold white">{{ cloneIndex }}</span>
               </p>
@@ -91,7 +91,7 @@ const ticket = [
     price: 4990000,
   },
   {
-    title: 'Talkshow',
+    title: 'Talk Show',
     name: 'talkshow',
     desc: {
       before: 'Vé Talk Show “Thương hiệu cá nhân 5.0”',

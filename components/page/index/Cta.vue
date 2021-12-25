@@ -53,9 +53,10 @@ onMounted(() => {
     }
   }
   &.light {
-    border-color: $skyLight;
+    border-color: $blueLight;
+    color: $blueLight;
     &:hover {
-      border-color: $blueLight;
+      border-color: $blueBasic;
       background: transparent;
       color: $blueBasic;
     }

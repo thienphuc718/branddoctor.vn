@@ -282,7 +282,7 @@
     </svg>
 
     <svg
-      v-else-if="props.name === 'website'"
+      v-else-if="props.name === 'Website'"
       width="16"
       height="16"
       viewBox="0 0 16 16"
@@ -296,7 +296,7 @@
     </svg>
 
     <svg
-      v-else-if="props.name === 'youtube'"
+      v-else-if="props.name === 'Youtube'"
       width="16"
       height="16"
       viewBox="0 0 16 16"
@@ -321,7 +321,7 @@
     </svg>
 
     <svg
-      v-else-if="props.name === 'facebook'"
+      v-else-if="props.name === 'Facebook'"
       width="16"
       height="16"
       viewBox="0 0 16 16"

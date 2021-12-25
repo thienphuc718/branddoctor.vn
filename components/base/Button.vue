@@ -42,7 +42,7 @@ const isText = computed(() => {
 .cta {
   border-radius: 6rem;
   display: flex;
-  border: solid 1rem;
+  border: solid 2rem;
   border-color: transparent;
   cursor: pointer;
   font-family: 'IBM Plex Sans', sans-serif;

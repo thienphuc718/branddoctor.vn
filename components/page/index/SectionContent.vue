@@ -3,12 +3,12 @@
     <PageIndexContentHeader v-if="!mediaMobile.matches" />
     <div class="row">
       <div class="content pr-80rem">
-        <PageIndexContentWhy class="border-b-1 pb-64rem mb-48rem" />
-        <PageIndexContentAudience class="border-b-1 pb-64rem mb-48rem" />
-        <PageIndexThematicGeneral class="border-b-1 pb-64rem mb-48rem" />
-        <PageIndexContentResult class="border-b-1 pb-64rem mb-48rem" />
-        <PageIndexThematicContent class="border-b-1 pb-64rem mb-48rem" />
-        <PageIndexThematicSpeaker class=" mb-48rem" />
+        <PageIndexContentWhy class="border-b-1 pb-64rem pt-48rem" />
+        <PageIndexContentAudience class="border-b-1 pb-64rem pt-48rem" />
+        <PageIndexThematicGeneral class="border-b-1 pb-64rem pt-48rem" />
+        <PageIndexContentResult class="border-b-1 pb-64rem pt-48rem" />
+        <PageIndexThematicContent class="border-b-1 pb-64rem pt-48rem" />
+        <PageIndexThematicSpeaker class=" pt-48rem" />
       </div>
       <div v-if="!mediaMobile.matches" class="col flex-shrink-0 w-346rem">
         <PageIndexContentCta class="mt-40rem" />
