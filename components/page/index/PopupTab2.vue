@@ -62,8 +62,7 @@
                 currency(ticket.price)
                   .toString()
                   .replaceAll(',', '.')
-              }}
-                đ</span>
+              }}đ</span>
             </p>
             <div class="pl-12rem w-33%">
               <p class="h-32rem w-32rem bg-inkLightest rounded-4rem center">
@@ -75,8 +74,7 @@
                 currency(ticket.price * cloneIndex)
                   .toString()
                   .replaceAll(',', '.')
-              }}
-                đ</span>
+              }}đ</span>
             </p>
           </div>
         </div>
@@ -109,14 +107,8 @@ const ticket = [
 ]
 const cloneIndex = inject('cloneIndex')
 const currency = function(number) {
-<<<<<<< HEAD
   return new Intl.NumberFormat('ja-JP', {
     style: 'decimal',
-=======
-  return new Intl.NumberFormat('de-DE', {
-    style: 'currency',
-    currency: 'VND',
->>>>>>> a221054443e902813bb0903476e41899358b311b
     minimumFractionDigits: 0,
   }).format(number)
 }
