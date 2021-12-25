@@ -227,6 +227,7 @@ const submitHandler = async(e) => {
     }
     .heading-1 {
       padding: 0 24rem;
+      margin-bottom: 24rem;
       align-items: center;
       h2 {
         font-size: 20rem;
