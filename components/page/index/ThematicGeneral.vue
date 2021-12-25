@@ -46,7 +46,7 @@
             bản thân một cách chuyên nghiệp nhất.
           </p>
           <ul>
-            <p class="-ml-12rem font-semibold">
+            <p class="-ml-12rem">
               Ứng dụng:
             </p>
             <li>

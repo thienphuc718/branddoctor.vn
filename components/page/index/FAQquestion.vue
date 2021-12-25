@@ -37,7 +37,7 @@ const question = [
     title:
       'Tại sao BDA tặng tôi vé tham gia Talk Show “Thương hiệu cá nhân 5.0 – Góc nhìn từ những điểm khác biệt”?',
     desc:
-      'Vì sứ mệnh “Kiến tạo sự nghiệp của bạn”, BDA mong muốn mỗi thanh niên Việt Nam đều hiểu và biết vận dụng Thương hiệu cá nhân.',
+      'Vì sứ mệnh “Kiến tạo sự nghiệp của bạn”, BDA mong muốn mỗi thanh niên Việt Nam đều hiểu và biết vận dụng thương hiệu cá nhân.',
     up: false,
     down: false,
   },
@@ -58,7 +58,7 @@ const question = [
   {
     title: 'Học phí của chuyên đề này là bao nhiêu?',
     desc:
-      'Mức học phí cho chuyên đề này là 5.000.000 VNĐ/học viên. Khi đăng ký học theo nhóm 3 người, nhóm sẽ được giảm 10% học phí. Và khi đăng ký học theo nhóm 5 người, nhóm sẽ được giảm 20% học phí.',
+      'Mức học phí cho chuyên đề này là 5.000.000đ/học viên. Khi đăng ký học theo nhóm 3 người, nhóm sẽ được giảm 10% học phí. Và khi đăng ký học theo nhóm 5 người, nhóm sẽ được giảm 20% học phí.',
     up: false,
     down: false,
   },

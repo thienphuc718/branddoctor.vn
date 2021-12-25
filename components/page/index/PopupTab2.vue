@@ -94,7 +94,7 @@ const ticket = [
       content: ' Góc nhìn từ ',
       after: 'những điểm khác biệt',
     },
-    price: 4990000,
+    price: 5000000,
   },
   {
     title: 'Talk Show',
@@ -109,8 +109,14 @@ const ticket = [
 ]
 const cloneIndex = inject('cloneIndex')
 const currency = function(number) {
+<<<<<<< HEAD
   return new Intl.NumberFormat('ja-JP', {
     style: 'decimal',
+=======
+  return new Intl.NumberFormat('de-DE', {
+    style: 'currency',
+    currency: 'VND',
+>>>>>>> a221054443e902813bb0903476e41899358b311b
     minimumFractionDigits: 0,
   }).format(number)
 }

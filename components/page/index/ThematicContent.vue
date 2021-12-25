@@ -128,12 +128,12 @@ const accord = [
       },
       {
         icon: 'book',
-        content: 'Tổng quan về lộ trình 3 bước xây dựng thương hiệu cá nhân',
+        content: 'Tổng quan về lộ trình 3 bước xây dựng thương hiệu cá nhân.',
         link: '',
       },
       {
         icon: 'pratice',
-        content: 'Phân tích SWOT để thấu hiểu bản thân và tối ưu hóa điểm mạnh',
+        content: 'Phân tích SWOT để thấu hiểu bản thân và tối ưu hóa điểm mạnh.',
         link: '',
       },
       {
@@ -224,7 +224,7 @@ const accord = [
     title: {
       before: '',
       content:
-        'Lan tỏa những giá trị khác biệt của chính riêng bạn để mở rộng vòng tròn quan hệ kinh doanh',
+        'Lan tỏa thương hiệu bạn để mở rộng vòng tròn quan hệ trong kinh doanh',
       after: '',
     },
     content: [

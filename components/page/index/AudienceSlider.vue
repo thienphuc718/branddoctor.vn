@@ -20,13 +20,13 @@
 <script setup lang="ts">
 const slide = [
   {
-    title: 'Cá nhân có nhu cầu xây dựng thương hiệu cá nhân',
-    desc: 'Để phát triển doanh nghiệp của chính mình trong  tương lai.',
+    title: 'Các bạn trẻ trên con đường xây dựng sự nghiệp',
+    desc: 'Để có được hình ảnh chuyên nghiệp trong mắt nhà tuyển dụng.',
   },
   {
-    title: 'Lãnh đạo doanh nghiệp',
+    title: 'Lãnh đạo doanh nghiệp và quản lý cấp trung',
     desc:
-      'Doanh nghiệp không được khách hàng biết đến vì sự khác biệt nào. Vẫn sử dụng ăn theo các doanh...',
+      'Để trở nên khác biệt trong mắt nhân viên và đối tác.',
   },
   {
     title: 'Quản lý cấp trung',
