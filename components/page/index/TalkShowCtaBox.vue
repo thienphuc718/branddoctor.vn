@@ -1,6 +1,6 @@
 <template>
   <div
-    class="cta-box max-w-336rem p-32rem dark rounded-8rem max-h-530rem center col content-box"
+    class="cta-box max-w-336rem p-32rem dark rounded-8rem max-h-580rem center col content-box"
   >
     <h3 class="mb-24rem font-medium hidden-mob">
       Buổi 1*

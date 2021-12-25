@@ -61,16 +61,16 @@
               </div>
             </div>
           </div>
-          <div class="speaker-history mt-24rem">
+          <div class="speaker-history mt-32rem">
             <div class="activity mb-24rem">
               <p class="font-semibold mb-12rem">
-                {{ speaker.desc1 }}
+                <span class="text-18rem">{{ speaker.desc1 }}</span>
               </p>
               <ul>
                 <li
                   v-for="desc in speaker.desc1Content"
                   :key="desc"
-                  class="mb-12rem"
+                  class="mb-12rem text-18rem inkLighter"
                 >
                   {{ desc }}
                 </li>

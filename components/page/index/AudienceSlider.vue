@@ -1,5 +1,5 @@
 <template>
-  <div id="audienceSlider" class="slider">
+  <div id="audienceSlider" class="slider pb-8rem">
     <div ref="track" class="track flex gap-16rem">
       <div
         v-for="(slide, index) in slide"
@@ -25,8 +25,7 @@ const slide = [
   },
   {
     title: 'Lãnh đạo doanh nghiệp và quản lý cấp trung',
-    desc:
-      'Để trở nên khác biệt trong mắt nhân viên và đối tác.',
+    desc: 'Để trở nên khác biệt trong mắt nhân viên và đối tác.',
   },
   {
     title: 'Quản lý cấp trung',

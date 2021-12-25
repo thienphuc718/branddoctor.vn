@@ -18,7 +18,7 @@
         </p>
       </div>
     </div>
-    <div class="talkshow-content flex gap-24rem overflow-hidden max-h-530rem">
+    <div class="talkshow-content flex gap-24rem overflow-hidden max-h-580rem">
       <PageIndexTalkShowCtaBox />
       <PageIndexTalkShowSlider />
     </div>

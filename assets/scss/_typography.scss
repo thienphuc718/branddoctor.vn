@@ -34,7 +34,7 @@ body {
   }
 
   .heading-1 h2 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 39rem;
     line-height: 120%;
     @include size('small') {
@@ -45,7 +45,7 @@ body {
   }
 
   .heading-2 h2 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 31rem;
     line-height: 120%;
     @include size('small') {

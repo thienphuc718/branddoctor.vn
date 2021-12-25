@@ -30,7 +30,7 @@
             </h2>
           </div>
           <p>
-            {{ why.desc }}
+            <span class="text-18rem inkLighter">{{ why.desc }}</span>
           </p>
         </div>
       </div>

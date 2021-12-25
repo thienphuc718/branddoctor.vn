@@ -77,6 +77,8 @@
 .thematic-content {
   p {
     margin-bottom: 24rem;
+    color: $inkLighter;
+    font-size: 18rem;
   }
   ul {
     padding-left: 12rem;

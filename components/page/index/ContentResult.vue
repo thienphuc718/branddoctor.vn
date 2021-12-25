@@ -15,15 +15,10 @@
           <BaseIcon :name="`why-${index + 1}`" />
           <div>
             <p class="thick">
-              <span class=" inkLight">{{ why.title }}</span>
+              <span class=" inkLight text-18rem">{{ why.title }}</span>
             </p>
             <p>
-              {{ why.desc }}
-              <a
-                v-if="why.link.length"
-                class="font-semibold hover:text-#5584E5"
-                href="#dien-gia"
-              >{{ why.link }}</a>
+              <span class="inkLighter">{{ why.desc }}</span>
             </p>
           </div>
         </div>
