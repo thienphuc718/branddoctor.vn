@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-grow gap-24rem">
     <BaseNav
-      fill="#5584E5"
+      fill="#fff"
       stroke="#5584E5"
       class="gap-8rem col justify-center items-center base-nav hidden-mob"
     >
@@ -35,7 +35,7 @@
               <div>
                 <h3>{{ slide.time }}</h3>
                 <p class="small" :class="{ 'mb-12rem': slide.speaker }">
-                  SÁNG | 08/01/2021
+                  <span class="text-12rem">SÁNG | 08/01/2021</span>
                 </p>
               </div>
               <img
@@ -71,8 +71,13 @@
   </div>
 </template>
 <script setup lang="ts">
+import { getDocument, getWindow } from 'ssr-window'
 import Slider from '~/logic/slider.ts'
 import { mediaMobile } from '~/logic/mediaQuery.ts'
+
+const document = getDocument()
+const window = getWindow()
+
 const slide = [
   {
     time: '09:00',
@@ -122,14 +127,27 @@ const slide = [
     speaker: false,
   },
 ]
-const hello = Slider('#talkshowSlider', 2, 'verticle')
+const hello = Slider('#talkshowSlider', 3, 'verticle')
+
+const scrollTalkshowSlider = () => {
+  const talkshowSlider = document.getElementById('talkshowSlider')
+  const sliderBounding = talkshowSlider.getBoundingClientRect()
+
+  if (sliderBounding.top < window.innerHeight * (1 / 3)) {
+    setInterval(() => {
+      if (!isPause.value && !mediaMobile.matches) hello.slideNext()
+    }, 2000)
+    window.removeEventListener('scroll', scrollTalkshowSlider)
+  }
+}
 
 const isPause = ref(false)
 
 onMounted(() => {
-  setInterval(() => {
-    if (!isPause.value && !mediaMobile.matches) hello.slideNext()
-  }, 2000)
+  window.addEventListener('scroll', scrollTalkshowSlider)
+})
+onUnmounted(() => {
+  window.removeEventListener('scroll', scrollTalkshowSlider)
 })
 </script>
 <style lang="scss" scoped>
@@ -150,6 +168,7 @@ onMounted(() => {
       flex-direction: column-reverse;
       border: none;
       box-shadow: 0px 4px 4px 0px #00000040;
+      border: solid 1px #00000040;
 
       h3 {
         font-size: 16rem;

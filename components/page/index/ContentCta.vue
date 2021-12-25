@@ -2,7 +2,7 @@
   <div class="content-cta">
     <div class="content-cta-ticket">
       <div
-        class="cta-header content-box !rounded-8rem dark p-20rem base-shadow border-dashed border-1"
+        class="cta-header content-box !rounded-8rem dark p-20rem base-shadow border-dashed border-2rem"
       >
         <p class="small font-medium mb-4rem">
           <span class="blueLighter">Chuyên đề đào tạo:</span>
@@ -12,7 +12,7 @@
         </p>
       </div>
       <div
-        class="light p-20rem !rounded-8rem base-shadow col gap-8rem border-dashed border-1 cta-info"
+        class="light p-20rem pt-12rem !rounded-8rem base-shadow col gap-8rem border-dashed border-2rem cta-info"
       >
         <div v-for="info in info" :key="info" class="flex justify-between">
           <p class="flex">
@@ -27,7 +27,7 @@
         </div>
       </div>
       <div
-        class=" light p-20rem !rounded-8rem base-shadow col gap-8rem border-dashed border-1"
+        class=" light p-20rem pt-12rem !rounded-8rem base-shadow col gap-8rem border-dashed border-2rem"
       >
         <div class="flex justify-between">
           <div class="counter flex gap-16rem">

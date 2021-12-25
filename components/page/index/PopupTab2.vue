@@ -3,7 +3,7 @@
     <p class="mb-24rem">
       <span class="font-semibold">Chọn nội dung bạn muốn đăng ký </span>
     </p>
-    <div class="tab rounded-8rem border-1 bg-skyLightest">
+    <div class="tab rounded-8rem border-2rem bg-skyLightest">
       <div class="tab-header flex px-24rem py-12rem">
         <div class="flex w-100% items-center">
           <div class="flex w-6% ticket-checkbox items-center">

@@ -3,7 +3,7 @@
     <p class="font-semibold mb-24rem">
       Chọn hình thức mà bạn muốn đăng ký
     </p>
-    <div class="tab rounded-8rem border-1 bg-skyLightest">
+    <div class="tab rounded-8rem border-2rem bg-skyLightest">
       <div class="tab-header row">
         <div
           v-for="(tab, index) in tab"
@@ -162,7 +162,7 @@ watchEffect(() => {
           },
           {
             type: 'text',
-            label: 'Tổ chức anh/chị đang làm việc *',
+            label: 'Tổ chức Anh/Chi đang làm việc *',
             required: true,
             name: 'your-company',
             placeholder: 'Công ty ABC',
@@ -172,7 +172,7 @@ watchEffect(() => {
           {
             type: 'text',
             label: 'Quy mô tổ chức*',
-            required: true,
+            required: false,
             name: 'your-scale',
             placeholder: 'Nhập số lượng nhân viên tương ứng',
             width: '50',

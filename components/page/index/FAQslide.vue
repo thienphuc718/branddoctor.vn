@@ -1,6 +1,5 @@
 <template>
-  <div class="padding-all">
-    <div class="divider mb-80rem hidden-mob" />
+  <div class="padding-all !py-0">
     <div class="heading-2 flex items-start justify-between ">
       <h2 class="mb-24rem">
         <span class="carolinaLight font-semibold">
@@ -9,7 +8,7 @@
       </h2>
       <div class="flex items-center gap-12rem hidden-mob">
         <p>1/10</p>
-        <BaseNav fill="#5584E5" stroke="#5584E5" class="gap-8rem">
+        <BaseNav fill="white" stroke="#5584E5" class="gap-8rem">
           <BaseIcon
             name="cheviron-prev"
             class="nav-prev"

@@ -1,7 +1,7 @@
 <template>
   <div id="why" class="content-why">
     <div class="heading-2">
-      <h2 class="pb-32rem border-b-1 mb-32rem">
+      <h2 class="pb-32rem border-b-2rem mb-32rem">
         <span class="carolinaLight font-semibold">
           Tại sao bạn nên tham gia chương trình này?
         </span>
@@ -22,7 +22,7 @@
               <a
                 v-if="why.link.length"
                 class="font-medium underline hover:text-#5584E5"
-                href="#dien-gia"
+                href="#speaker"
               >{{ why.link }}</a>
             </p>
           </div>
@@ -34,7 +34,7 @@
 <script setup lang="ts">
 const why = [
   {
-    title: 'Xây dựng 1 hình ảnh bản thân chuyên nghiệp',
+    title: 'Xây dựng một hình ảnh bản thân chuyên nghiệp',
     desc: 'Từ đó bạn sẽ được săn đón và quý trọng.',
     link: '',
   },
@@ -81,6 +81,9 @@ const why = [
         margin-right: 16rem;
       }
     }
+  }
+  #why {
+    padding-top: 24rem;
   }
 }
 </style>

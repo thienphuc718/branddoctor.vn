@@ -9,9 +9,6 @@
       <BaseShowHide>
         <div class="thematic-content">
           <p>
-            <span class="font-semibold">Thương hiệu cá nhân trong thời đại 5.0</span>
-          </p>
-          <p>
             Với sự phát triển không ngừng của thế giới, các hoạt động hợp tác,
             cạnh tranh liên tục diễn ra và trở nên sôi động theo từng ngày. Bên
             cạnh đó, thế giới cũng dần chuyển mình sang kỷ nguyên 5.0 – kỷ

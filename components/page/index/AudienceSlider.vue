@@ -3,7 +3,7 @@
     <div ref="track" class="track flex gap-16rem">
       <div
         v-for="(slide, index) in slide"
-        class="slide flex gap-12rem border-1 rounded-4rem p-24rem items-start base-shadow"
+        class="slide flex gap-12rem border-2rem rounded-4rem p-24rem items-start base-shadow"
         :class="{ 'item-active': activeSlide.title == slide.title }"
       >
         <BaseIcon :name="`human-${index + 1}`" class="icon" />
@@ -20,7 +20,7 @@
 <script setup lang="ts">
 const slide = [
   {
-    title: 'Các bạn trẻ trên con đường xây dựng sự nghiệp',
+    title: 'Các bạn trẻ đang trên con đường xây dựng sự nghiệp',
     desc: 'Mong muốn có được hình ảnh chuyên nghiệp trong mắt nhà tuyển dụng.',
   },
   {

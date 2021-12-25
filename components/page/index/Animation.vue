@@ -14,7 +14,7 @@
         </div>
       </div>
       <div
-        class="progress-bar w-96rem rounded-22rem h-6rem border-1 border-white flex items-center"
+        class="progress-bar w-96rem rounded-22rem h-6rem border-2rem border-white flex items-center"
       >
         <div class="bar bg-white w-100% rounded-22rem h-5rem" />
       </div>

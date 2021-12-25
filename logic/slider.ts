@@ -34,7 +34,8 @@ export default function Slider(
         }
         distanceX
           = (slide.length * slideWidth + (slide.length - 1) * slideGap)
-          / slide.length
+            / slide.length
+          + 4
         distanceY = 0
       }
 
@@ -51,7 +52,7 @@ export default function Slider(
       }
       track.setAttribute(
         'style',
-        `transform: translate3d(-${(distanceX + 4)
+        `transform: translate3d(-${distanceX
           * slideIndex.value}px,-${distanceY * slideIndex.value}px,0)`,
       )
     })

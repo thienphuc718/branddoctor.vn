@@ -33,7 +33,7 @@
           <input
             type="text"
             placeholder="example@email.com"
-            class="py14rem px-14rem rounded-4rem border-none w-60% !border-gray-500 !border-1"
+            class="py14rem px-14rem rounded-4rem border-none w-60% !border-gray-500 !border-2rem"
           >
           <BaseButton
             theme="dark"
@@ -74,7 +74,7 @@ const menu = [
       { title: 'Facebook', link: '' },
       { title: 'Instagram', link: '' },
       { title: 'Tiktok', link: '' },
-      { title: 'Youtube', link: '' },
+      { title: 'YouTube', link: '' },
     ],
     order: 3,
     min: 150,

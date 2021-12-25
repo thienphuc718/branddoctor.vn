@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex justify-between content-header bg-white z-9999 border-b-1px"
+    class="flex justify-between content-header bg-white z-9999 border-b-2rempx"
     :class="{ 'item-active': isHeaderActive }"
   >
     <div class="flex gap-32rem content-box items-center">
@@ -19,20 +19,23 @@
       <div class="counter flex gap-12rem">
         <div v-for="(digit, index) in digit" :key="digit">
           <h4>{{ ('0' + counter[digit.type]).slice(-2) }}</h4>
-          <p>{{ digit.text }}</p>
+          <p>
+            {{ digit.text }}
+          </p>
         </div>
       </div>
       <PageIndexProgress bar="#5584E5" inner="#DFE3E8" bg="white" />
       <div class="flex gap-16rem items-center">
         <BaseButton
-          title="Đăng ký chuyên đề"
-          size="regular"
+          title="Tham gia Talk Show"
+          size="big"
           theme="dark"
           @click="isCheckout = true"
         />
         <PageIndexCta
           theme="light"
-          title="Tham gia Talk Show"
+          size="big"
+          title="Đăng ký chuyên đề"
           @click="isCheckout = true"
         />
       </div>

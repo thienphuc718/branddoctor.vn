@@ -14,10 +14,10 @@
         class="question content-box p-24rem border-2 !border-#C4CDD5 rounded-4rem"
       >
         <p class="thick mb-8rem">
-          {{ question.title }}
+          <span class="text-18rem inkLighter">{{ question.title }}</span>
         </p>
         <p class="mb-8rem">
-          {{ question.desc }}
+          <span class="text-18rem inkLighter">{{ question.desc }}</span>
         </p>
         <div class="flex gap-16rem">
           <BaseIcon name="upvote" @click="toggleUp(index)" />
@@ -84,15 +84,15 @@ const toggleDown = (index) => {
 .question {
   width: calc(50% - 16rem);
   &:hover {
-    border-color: $blueLighter !important;
-    .thick {
-      color: $blueLight !important;
+    background: $blueLight;
+    * {
+      color: white !important;
     }
   }
 }
 @include size('small') {
   .padding-all {
-    padding-top: 0;
+    padding-top: 80rem;
   }
 }
 </style>

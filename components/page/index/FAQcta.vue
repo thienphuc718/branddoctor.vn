@@ -1,5 +1,5 @@
 <template>
-  <div class="padding-all dark">
+  <div class="padding-all dark !pb-0">
     <div class="p-48rem rounded-8rem cta-box">
       <div class="heading-box max-w-500rem">
         <h2
@@ -54,7 +54,7 @@
 }
 @include size('small') {
   .padding-all {
-    padding-top: 0;
+    padding-top: 80rem;
 
     .cta-box {
       padding: 32rem;

@@ -1,7 +1,7 @@
 <template>
   <div id="speaker" class="col thematic-content">
     <div class="heading-2">
-      <h2 class="mb-24rem">
+      <h2 class="mb-40rem">
         <span class="carolinaLight font-semibold">
           Đội ngũ giảng viên
         </span>
@@ -11,7 +11,7 @@
       <div
         v-for="(speaker, index) in speaker"
         :key="speaker"
-        class="speaker pt-80rem pb-80rem border-b-1 relative"
+        class="speaker mb-80rem pb-80rem border-b-2rem relative"
       >
         <BaseShowHide>
           <div class="speaker-header flex gap-32rem items-center">
@@ -22,7 +22,7 @@
               class="hidden-mob"
             >
             <div class="speaker-info ">
-              <div class="pb-12rem border-b-1 mb-20rem">
+              <div class="pb-12rem border-b-2rem mb-20rem">
                 <div class="flex gap-16rem">
                   <h4 class="gradient-text font-bold mb-4rem">
                     {{ speaker.name }}
@@ -50,7 +50,8 @@
                   <a
                     v-for="(social, name, index) in speaker.link"
                     :href="speaker.link[name]"
-                    class="social flex gap-8rem py-8rem px-12rem border-1 rounded-4rem"
+                    target="_blank"
+                    class="social flex gap-8rem py-8rem px-12rem border-2rem rounded-4rem"
                   >
                     <BaseIcon :name="name" />
                     <p>
@@ -64,7 +65,7 @@
           <div class="speaker-history mt-32rem">
             <div class="activity mb-24rem">
               <p class="font-semibold mb-12rem">
-                <span class="text-18rem">{{ speaker.desc1 }}</span>
+                <span class="text-18rem inkLight">{{ speaker.desc1 }}</span>
               </p>
               <ul>
                 <li
@@ -103,8 +104,8 @@ const speaker = [
     link: {
       Website: 'https://nguyenkhanhtrung.com/',
       Facebook: 'https://www.facebook.com/BacSiThuongHieu',
-      Youtube:
-        'https://www.youtube.com/c/BRANDDOCTORB%C3%81CS%C4%A8TH%C6%AF%C6%A0NGHI%E1%BB%86U',
+      YouTube:
+        'https://www.YouTube.com/c/BRANDDOCTORB%C3%81CS%C4%A8TH%C6%AF%C6%A0NGHI%E1%BB%86U',
     },
     desc1:
       'Bác sĩ Thương hiệu Nguyễn Khánh Trung – Một trong những người tiên phong trong lĩnh vực chăm sóc sức mạnh thương hiệu của các doanh nghiệp Việt.',
@@ -134,7 +135,7 @@ const speaker = [
     // desc2: 'Hành trình phát triển',
     // desc2Content: [
     //   'Lê Âu Ngân Anh đã đăng quang Hoa hậu Đại dương Việt Nam 2017 và Á hậu 4 Miss Intercontinental 2018 khi còn rất trẻ, tuy nhiên cô đã lựa chọn tập trung hoàn thiện bản thân trên con đường học vấn. Không lâu sau cô tốt nghiệp Thạc sĩ ngành Quản trị Sự Kiện Quốc Tế tại Đại học Salford (Anh)',
-    //   'Hơn nữa, Lê Âu Ngân Anh còn có cho mình một kênh youtube không phải vì nhu cầu nổi tiếng mà phục vụ cho việc giảng dạy, đồng thời là nơi các bạn trẻ được cô truyền cảm hứng và tạo động lực.',
+    //   'Hơn nữa, Lê Âu Ngân Anh còn có cho mình một kênh YouTube không phải vì nhu cầu nổi tiếng mà phục vụ cho việc giảng dạy, đồng thời là nơi các bạn trẻ được cô truyền cảm hứng và tạo động lực.',
     //   'Cô đã chứng minh được khẳng định được khẳng định của bản thân “tôi không muốn nổi tiếng nhưng sáo rỗng”, thể hiện qua việc vào lúc mới đăng quang hoa hậu cô đã đối mặt nhiều “tai tiếng” với “xuất phát điểm là 0% người ủng hộ”, và không ít những hoài nghi về nhan sắc và thực lực của cô. Tuy nhiên đến ngày hôm nay nàng hậu đang dần hoàn toàn chinh phục người hâm mộ và số lượng người yêu thích cô ngày càng tăng. Và có nhiều người bắt đầu công nhận cô là một trong những mỹ nhân đại diện cho “tài sắc vẹn toàn”.',
     // ],
   },

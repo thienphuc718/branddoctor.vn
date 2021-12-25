@@ -11,15 +11,13 @@ const props = defineProps({
 </script>
 <style lang="scss">
 .nav-prev {
-  opacity: 0.75;
   cursor: pointer;
   &:hover {
-    opacity: 1;
     path {
       fill: var(--fill);
     }
     rect {
-      stroke: var(--stroke);
+      fill: var(--stroke);
     }
   }
 }
@@ -31,7 +29,7 @@ const props = defineProps({
       fill: var(--fill);
     }
     rect {
-      stroke: var(--stroke);
+      fill: var(--stroke);
     }
   }
 }

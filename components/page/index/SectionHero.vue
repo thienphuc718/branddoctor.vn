@@ -12,7 +12,13 @@
     <div
       class="row content-row center p-80rem gap-48rem content-box heading-box flex-grow"
     >
-      <img src="/ldp-hero-poster.jpg" width="239" height="298" alt="">
+      <img
+        src="/ldp-hero-poster.jpg"
+        width="239"
+        height="298"
+        alt=""
+        class="rounded-4rem"
+      >
       <div class="col items-start">
         <p
           class="font-medium button p-5.5rem bg-blueBasic rounded-4rem mb-21rem"
@@ -31,17 +37,17 @@
           <div
             class="flex flex-wrap justify-center flex-1 gap-16rem hidden-des mt-32rem"
           >
-            <div class="border-1 rounded-40rem flex gap-8rem py-8rem px-16rem">
+            <div class="border-2rem rounded-40rem flex gap-8rem py-8rem px-16rem">
               <p>
                 08/01/2021
               </p>
             </div>
-            <div class="border-1 rounded-40rem flex gap-8rem py-8rem px-16rem">
+            <div class="border-2rem rounded-40rem flex gap-8rem py-8rem px-16rem">
               <p>
                 Zoom Meeting
               </p>
             </div>
-            <div class="border-1 rounded-40rem flex gap-8rem py-8rem px-16rem">
+            <div class="border-2rem rounded-40rem flex gap-8rem py-8rem px-16rem">
               <p>
                 <span class="font-semibold">Toàn chuyên đề: 4 buổi (10 giờ)</span>
               </p>
@@ -52,7 +58,7 @@
           <div v-for="(digit, index) in digit" :key="digit">
             <div class="flex gap-8rem items-start">
               <div>
-                <div class="center h-40rem w-40rem rounded-4rem border-1">
+                <div class="center h-40rem w-40rem rounded-4rem border-2rem">
                   <h4>{{ ('0' + counter[digit.type]).slice(-2) }}</h4>
                 </div>
                 <p class="mt-8rem">
@@ -74,7 +80,7 @@
       <div class="hidden-mob">
         <a href="#trailer" class="row items-center">
           <BaseIcon name="play-btn" class="mr-12rem" />
-          <p>Xem trailer</p>
+          <p><span class="text-18rem">Xem trailer</span></p>
         </a>
       </div>
       <div class="row gap-24rem">
@@ -98,7 +104,7 @@
           </div>
           <BaseButton
             title="Tham gia Talk Show"
-            size="regular"
+            size="big"
             theme="dark"
             @mouseover="isTooltip = true"
             @mouseout="isTooltip = false"
@@ -111,6 +117,7 @@
         </p>
         <PageIndexCta
           theme="dark"
+          size="big"
           title="Đăng ký chuyên đề"
           @click="isCheckout = true"
         />

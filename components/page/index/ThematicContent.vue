@@ -20,11 +20,11 @@
         Ẩn tất cả nội dung
       </p>
     </div>
-    <div class="accordion mt-24rem">
+    <div id="thematic-accordion" class="accordion mt-24rem">
       <div
         v-for="(accord, index) in accord"
         :key="accord"
-        class="accord mb-16rem last:border-b-1"
+        class="accord mb-16rem last:border-b-2rem"
         :class="{
           'item-active': activeAccord.title.content == accord.title.content,
         }"
@@ -49,7 +49,7 @@
           </p>
           <BaseIcon
             name="cheviron-down"
-            class="rounded-50% border-1 min-w-24rem min-h-24rem center"
+            class="rounded-50% border-2rem min-w-24rem min-h-24rem center"
             @click="activeAccord = null"
           />
         </div>
@@ -71,6 +71,7 @@
                 v-if="content.link.length"
                 href="#dang-ky"
                 class="font-bold blueLight"
+                @click="isCheckout = true"
               >{{ content.link }}</a>
             </span>
           </p>
@@ -86,10 +87,32 @@
 </template>
 <script setup lang="ts">
 import { getDocument } from 'ssr-window'
+import { mediaMobile } from '~/logic/mediaQuery.ts'
 
 const document = getDocument()
+onMounted(() => {
+  if (mediaMobile.matches) {
+    isShowAll.value = true
+    showAll()
+  }
+})
+const isCheckout = inject('isCheckout')
 
 const content = ['4 buổi ', '•', '10 giờ học', '•', '2 giảng viên hướng dẫn']
+const blankAccord = {
+  title: {
+    before: '',
+    content: '',
+    after: '',
+  },
+  content: [
+    {
+      icon: '',
+      content: '',
+      link: '',
+    },
+  ],
+}
 const accord = [
   {
     title: {
@@ -264,7 +287,7 @@ const activeAccord = ref(accord[0])
 const isShowAll = ref(false)
 
 const showAll = () => {
-  const accords = document.querySelectorAll('.accord[data-v-4d498cae]')
+  const accords = document.querySelectorAll('#thematic-accordion')
   isShowAll.value = !isShowAll.value
   if (isShowAll.value) {
     accords.forEach((item) => {
@@ -278,8 +301,9 @@ const showAll = () => {
   }
 }
 const toggleAccord = (accord) => {
-  activeAccord.value = accord
-  console.log(activeAccord.value)
+  if (activeAccord.value.title.content == accord.title.content)
+    activeAccord.value = blankAccord
+  else activeAccord.value = accord
 }
 </script>
 <style lang="scss" scoped>
@@ -292,9 +316,9 @@ const toggleAccord = (accord) => {
   overflow-y: hidden;
   max-height: 120px;
   cursor: pointer;
-  transition: max-height 0.5s linear;
+  transition: 0.5s linear;
   @include size(small) {
-    max-height: 200px;
+    max-height: 300px;
   }
   .accord-content {
     position: absolute;

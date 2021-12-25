@@ -15,7 +15,7 @@
               {{ hello.slideIndex.value + 1 }}/3
             </span>
           </p>
-          <BaseNav fill="#5584E5" stroke="#5584E5" class="gap-8rem">
+          <BaseNav fill="white" stroke="#5584E5" class="gap-8rem">
             <BaseIcon
               name="cheviron-prev"
               class="nav-prev"
@@ -37,7 +37,7 @@
 import Slider from '~/logic/slider.ts'
 import { mediaMobile } from '~/logic/mediaQuery.ts'
 
-const hello = Slider('#audienceSlider', 1)
+const hello = Slider('#audienceSlider', 2)
 onMounted(() => {
   if (mediaMobile.matches) {
     setInterval(() => {

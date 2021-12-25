@@ -1,16 +1,16 @@
 <template>
-  <div class="padding-all mt-80rem">
+  <div class="padding-all !pb-0">
     <div
-      class="talkshow-header flex justify-between mb-48rem light border-b-1 pb-24rem border-skyLight"
+      class="talkshow-header flex justify-between mb-48rem light border-b-2rem pb-24rem border-skyLight"
     >
       <div class="heading-1">
         <h2 class="inkBasic">
-          <span class="hidden-mob">Thông tin buổi Talk Show</span>
-          <span class="hidden-des flex">Về Talk Show</span>
+          <span class="hidden-mob inkLight">Thông tin buổi Talk Show</span>
+          <span class="hidden-des flex font-semibold">Về Talk Show</span>
         </h2>
       </div>
       <div
-        class="border-1 !border-#FFBC05 rounded-40rem flex gap-8rem py-8rem px-16rem bg-yellowLighter hidden-mob"
+        class="border-2rem !border-#FFBC05 rounded-40rem flex gap-8rem py-8rem px-16rem bg-yellowLighter hidden-mob"
       >
         <BaseIcon name="gold-star" />
         <p>
@@ -30,7 +30,7 @@
 }
 @include size('small') {
   .padding-all {
-    padding-top: 0;
+    padding-top: 40rem;
     padding-bottom: 0;
 
     .talkshow-content {

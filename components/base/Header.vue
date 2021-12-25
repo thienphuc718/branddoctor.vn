@@ -1,7 +1,7 @@
 <template>
   <div
     id="header"
-    class="flex gap-24rem items-center justify-between h-70rem p-24rem dark border-b-1 w-100vw absolute left-0 top-40rem z-9999"
+    class="flex gap-24rem items-center justify-between h-70rem p-24rem dark border-b-2rem w-100vw absolute left-0 top-40rem z-9999"
   >
     <div class="search-bar flex gap-24rem items-center flex-1">
       <BaseIcon name="search" />

@@ -6,11 +6,13 @@
     <div class="progress">
       <div class="inner" />
     </div>
-    <div class="col">
+    <div class="col justify-end">
       <h4 class="font-bold -mb-8rem">
         30%
       </h4>
-      <p><span class="text-8rem">ĐÃ ĐĂNG KÝ</span></p>
+      <p class="-mb-8rem">
+        <span class="text-8rem">ĐÃ ĐĂNG KÝ</span>
+      </p>
     </div>
   </div>
 </template>

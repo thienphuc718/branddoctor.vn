@@ -1,7 +1,7 @@
 <template>
   <iframe
     id="trailer"
-    src="https://www.youtube.com/embed/6dQT3FVslVQ"
+    :src="src"
     title="YouTube video player"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
@@ -17,3 +17,22 @@
   }
 }
 </style>
+<script setup lang="ts">
+const src = ref('https://www.YouTube.com/embed/6dQT3FVslVQ')
+const scrollTrailer = () => {
+  const trailer = document.getElementById('trailer')
+  const trailerBounding = trailer.getBoundingClientRect()
+
+  if (trailerBounding.top < window.innerHeight / 2) {
+    src.value = 'https://www.YouTube.com/embed/6dQT3FVslVQ?autoplay=1'
+    window.removeEventListener('scroll', scrollTrailer)
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', scrollTrailer)
+})
+onUnmounted(() => {
+  window.removeEventListener('scroll', scrollTrailer)
+})
+</script>

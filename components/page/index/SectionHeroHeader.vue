@@ -2,20 +2,20 @@
   <div class="row content-box heading-box">
     <div class="row items-center flex-1 gap-16rem hidden-mob">
       <div
-        class="border-1 !border-#FFBC05 rounded-40rem flex gap-8rem py-8rem px-16rem"
+        class="border-2rem !border-#FFBC05 rounded-40rem flex gap-8rem py-8rem px-16rem"
       >
         <BaseIcon name="human-chat" />
         <p>
           <span class="font-semibold !text-#FFBC05">Tặng vé Talk Show (buổi đầu)</span>
         </p>
       </div>
-      <div class="border-1 rounded-40rem flex gap-8rem py-8rem px-16rem">
+      <div class="border-2rem rounded-40rem flex gap-8rem py-8rem px-16rem">
         <BaseIcon name="calendar" />
         <p>
           08/01/2021
         </p>
       </div>
-      <div class="border-1 rounded-40rem flex gap-8rem py-8rem px-16rem">
+      <div class="border-2rem rounded-40rem flex gap-8rem py-8rem px-16rem">
         <BaseIcon name="zoom" />
         <p>
           Zoom Meeting
@@ -31,7 +31,7 @@
       </div>
       <PageIndexProgress bar="white" inner="#637381" bg="black" />
       <div
-        class="border-1 rounded-40rem flex gap-8rem py-8rem px-16rem hidden-mob"
+        class="border-2rem rounded-40rem flex gap-8rem py-8rem px-16rem hidden-mob"
       >
         <BaseIcon name="clock" />
         <p>

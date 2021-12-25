@@ -7,7 +7,7 @@
             class="min-w-40rem min-h-40rem rounded-50% bg-blueLight shrink-0 center mt-6rem"
           />
           <div class="heading-2">
-            <h2 class="mb-12rem border-b-1 pb-20rem border-skyLight">
+            <h2 class="mb-12rem border-b-2rem pb-20rem border-skyLight">
               <span class="inkLight">Bạn “không thể” tham gia chuyên đề này</span>
               <span class="thick blueLight">?</span>
             </h2>
@@ -43,7 +43,7 @@
               class="w-288rem my-32rem"
               @click="isCheckout = true"
             />
-            <p class="font-semibold py-24rem border-t-1">
+            <p class="font-semibold py-24rem border-t-2rem">
               Hoặc nếu bạn suy nghĩ lại, bạn vẫn có thể đăng ký chuyên đề đào
               tạo tại đây:
             </p>

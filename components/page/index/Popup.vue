@@ -16,7 +16,7 @@
       method="post"
       @submit.prevent="submitHandler"
     >
-      <div class="tab-header row">
+      <div class="tab-header row hidden-mob">
         <div
           v-for="(tab, index) in tab"
           :key="tab"
@@ -94,8 +94,7 @@ const popupContent = ref('')
 const isPopupActive = ref(false)
 provide('isPopupActive', isPopupActive)
 const changeTab = (tab, index) => {
-  if (index == 1)
-    document.querySelector('.nextBtn').click()
+  if (index == 1) document.querySelector('.nextBtn').click()
 }
 const fieldsOne = ref([
   {

@@ -10,7 +10,7 @@ export default function fixOnDiv(fixedElement: any) {
       const offSetBounding = fixedElementParent.getBoundingClientRect()
       if (
         offSetBounding.top < 160
-        && offSetBounding.bottom > window.innerHeight - 300
+        && offSetBounding.bottom > window.innerHeight
       ) {
         isFix.value = true
         fixedElementParent.style.position = 'relative'
@@ -20,12 +20,8 @@ export default function fixOnDiv(fixedElement: any) {
             + 60}px; transition: 0.25s ease`,
         )
       }
-      else if (offSetBounding.bottom < window.innerHeight - 300) {
+      else if (offSetBounding.bottom < window.innerHeight) {
         isFix.value = false
-        fixedElement.setAttribute(
-          'style',
-          'position: absolute;top: 0px; transition: 3s ease',
-        )
       }
     }
     onMounted(() => {

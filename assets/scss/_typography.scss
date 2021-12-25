@@ -16,7 +16,7 @@
 
 body {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 18rem;
+  font-size: 16rem;
   color: $inkLighter;
 }
 
@@ -104,6 +104,13 @@ body {
 
     &.uppercase {
       text-transform: uppercase;
+    }
+  }
+
+  input{
+    &::placeholder{
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 16rem;
     }
   }
 
