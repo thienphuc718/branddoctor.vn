@@ -28,7 +28,7 @@
         :key="ticket"
         class="flex w-100% items-center bg-white p-24rem ticket-row"
       >
-        <div class="flex w-6% ticket-checkbox">
+        <div id="ticket-checkbox" class="flex w-6% ">
           <input
             type="checkbox"
             value="Đăng ký"
@@ -114,8 +114,11 @@ const currency = function(number) {
 }
 </script>
 <style lang="scss" scoped>
+#ticket-checkbox {
+  width: 6%;
+}
 @include size('small') {
-  .ticket-checkbox {
+  #ticket-checkbox {
     min-width: 30px;
     min-height: 30px;
 

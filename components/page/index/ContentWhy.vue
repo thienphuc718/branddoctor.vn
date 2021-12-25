@@ -1,8 +1,8 @@
 <template>
   <div id="why" class="content-why">
     <div class="heading-2">
-      <h2 class="pb-32rem border-b-1 mb-32rem mt-40rem">
-        <span class="carolinaLight font-medium">
+      <h2 class="pb-32rem border-b-1 mb-32rem">
+        <span class="carolinaLight font-semibold">
           Tại sao bạn nên tham gia chương trình này?
         </span>
       </h2>
@@ -56,14 +56,14 @@ const why = [
     link: '',
   },
   {
-    title: '1 buổi Talk Show có sự góp mặt mặt của Hoa hậu Lê Âu Ngân Anh',
+    title: '1 buổi Talk Show có sự góp mặt của Hoa hậu Lê Âu Ngân Anh',
     desc:
       'Và hành trình xây dựng thương hiệu cá nhân của chị trong 3 năm qua. ',
     link: 'Tìm hiểu diễn giả',
   },
   {
     title: '4 phiên thực hành trong 4 buổi học',
-    desc: 'Với tiêu chí làm để học, mỗi buổi học bạn đều có thể thực hành',
+    desc: 'Với tiêu chí làm để học, mỗi buổi học bạn đều có thể thực hành.',
     link: '',
   },
 ]

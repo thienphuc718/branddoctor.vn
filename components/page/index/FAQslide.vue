@@ -3,7 +3,7 @@
     <div class="divider mb-80rem hidden-mob" />
     <div class="heading-2 flex items-start justify-between ">
       <h2 class="mb-24rem">
-        <span class="carolinaLight font-medium">
+        <span class="carolinaLight font-semibold">
           Hình ảnh thực tế
         </span>
       </h2>

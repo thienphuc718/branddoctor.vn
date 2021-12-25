@@ -1,8 +1,8 @@
 <template>
   <div class="content-why">
     <div class="heading-2">
-      <h2 class="pb-32rem border-b-1 mb-32rem">
-        <span class="carolinaLight font-medium">
+      <h2 class="pb-32rem mb-32rem">
+        <span class="carolinaLight font-semibold">
           Tôi sẽ làm được gì sau chuyên đề?
         </span>
       </h2>

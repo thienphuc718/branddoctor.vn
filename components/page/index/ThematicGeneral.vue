@@ -2,7 +2,7 @@
   <div id="general" class="thematic-general relative">
     <div class="heading-2">
       <h2 class="mb-24rem">
-        <span class="carolinaLight font-medium">
+        <span class="carolinaLight font-semibold">
           Tổng quan chuyên đề
         </span>
       </h2>
@@ -84,7 +84,8 @@
     padding-left: 12rem;
 
     li {
-      color: $inkBasic;
+      color: $inkLighter;
+      font-size: 18rem;
       margin-bottom: 12rem;
       &:before {
         content: '+';

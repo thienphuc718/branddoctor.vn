@@ -174,7 +174,7 @@ watchEffect(() => {
             label: 'Quy mô tổ chức*',
             required: true,
             name: 'your-scale',
-            placeholder: 'Chọn số lượng nhân viên tương ứng',
+            placeholder: 'Nhập số lượng nhân viên tương ứng',
             width: '50',
             class: '',
           },

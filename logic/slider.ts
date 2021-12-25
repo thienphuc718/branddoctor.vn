@@ -51,16 +51,14 @@ export default function Slider(
       }
       track.setAttribute(
         'style',
-        `transform: translate3d(-${distanceX
+        `transform: translate3d(-${(distanceX + 4)
           * slideIndex.value}px,-${distanceY * slideIndex.value}px,0)`,
       )
     })
   })
   const slideNext = () => {
-    if (slideIndex.value == slide.length - maxSlide)
-      slideIndex.value = 0
-
-    if (slideIndex.value < slide.length - maxSlide) {
+    if (slideIndex.value == slide.length - maxSlide) slideIndex.value = 0
+    else if (slideIndex.value < slide.length - maxSlide) {
       slideIndex.value++
     }
   }

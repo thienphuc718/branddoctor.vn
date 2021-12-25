@@ -9,6 +9,7 @@
     <PageIndexSectionTalkShow />
     <PageIndexSectionContent />
     <PageIndexSectionFAQ />
+    <BaseFooter />
   </div>
 </template>
 
@@ -33,19 +34,20 @@ useMeta({
   meta: [
     {
       property: 'og:url',
-      content: 'https://developers.zalo.me/',
+      content: 'https://branddoctor.vn/',
     },
     {
       property: 'og:title',
-      content: '',
+      content:
+        'Chuyên đề “Thương hiệu cá nhân 5.0 – Góc nhìn từ những điểm khác biệt”',
     },
     {
       property: 'og:image',
-      content: '',
+      content: 'https://branddoctor.vn/_nuxt/ldp-hero-poster.jpg',
     },
     {
       property: 'og:description',
-      content: '',
+      content: 'Tặng bạn 1 vé Talk Show – buổi đầu tiên của chuyên đề',
     },
   ],
 })

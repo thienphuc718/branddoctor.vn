@@ -2,7 +2,7 @@
   <div id="speaker" class="col thematic-content">
     <div class="heading-2">
       <h2 class="mb-24rem">
-        <span class="carolinaLight font-medium">
+        <span class="carolinaLight font-semibold">
           Đội ngũ giảng viên
         </span>
       </h2>
@@ -100,7 +100,12 @@ const speaker = [
     img: 'nkt',
     position: 'Viện trưởng Brand Doctor Academy',
     special: '',
-    link: { Website: '', Facebook: '', Youtube: '' },
+    link: {
+      Website: 'https://nguyenkhanhtrung.com/',
+      Facebook: 'https://www.facebook.com/BacSiThuongHieu',
+      Youtube:
+        'https://www.youtube.com/c/BRANDDOCTORB%C3%81CS%C4%A8TH%C6%AF%C6%A0NGHI%E1%BB%86U',
+    },
     desc1:
       'Bác sĩ Thương hiệu Nguyễn Khánh Trung – Một trong những người tiên phong trong lĩnh vực chăm sóc sức mạnh thương hiệu của các doanh nghiệp Việt.',
     desc1Content: [
@@ -118,7 +123,7 @@ const speaker = [
     img: 'lana',
     position: 'Giảng viên Đại học Hoa Sen',
     special: '',
-    link: { Website: '', Facebook: '', Youtube: '' },
+    link: { Facebook: 'https://www.facebook.com/clonevia' },
     desc1:
       'Hoa hậu Lê Âu Ngân Anh – Người phụ nữ thành công từ đấu trường nhan sắc đến đấu trường tri thức',
     desc1Content: [

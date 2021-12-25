@@ -2,7 +2,7 @@
   <div id="faq" class="padding-all">
     <div class="heading-2 flex items-start justify-between ">
       <h2 class="mb-24rem">
-        <span class="carolinaLight font-medium">
+        <span class="carolinaLight font-semibold">
           Câu hỏi thường gặp
         </span>
       </h2>

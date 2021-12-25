@@ -15,8 +15,8 @@
       </p>
     </div>
 
-    <div v-if="isActive" class="flex justify-between gap-32rem items-center">
-      <div class="counter flex gap-16rem">
+    <div v-if="isActive" class="flex justify-between gap-16rem items-center">
+      <div class="counter flex gap-12rem">
         <div v-for="(digit, index) in digit" :key="digit">
           <h4>{{ ('0' + counter[digit.type]).slice(-2) }}</h4>
           <p>{{ digit.text }}</p>
@@ -24,15 +24,15 @@
       </div>
       <PageIndexProgress bar="#5584E5" inner="#DFE3E8" bg="white" />
       <div class="flex gap-16rem items-center">
-        <PageIndexCta
-          theme="light"
-          title="Đăng ký chuyên đề"
-          @click="isCheckout = true"
-        />
         <BaseButton
-          title="Tham gia Talk Show"
+          title="Đăng ký chuyên đề"
           size="regular"
           theme="dark"
+          @click="isCheckout = true"
+        />
+        <PageIndexCta
+          theme="light"
+          title="Tham gia Talk Show"
           @click="isCheckout = true"
         />
       </div>

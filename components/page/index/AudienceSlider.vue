@@ -21,21 +21,17 @@
 const slide = [
   {
     title: 'Các bạn trẻ trên con đường xây dựng sự nghiệp',
-    desc: 'Để có được hình ảnh chuyên nghiệp trong mắt nhà tuyển dụng.',
+    desc: 'Mong muốn có được hình ảnh chuyên nghiệp trong mắt nhà tuyển dụng.',
   },
   {
     title: 'Lãnh đạo doanh nghiệp và quản lý cấp trung',
-    desc: 'Để trở nên khác biệt trong mắt nhân viên và đối tác.',
+    desc:
+      'Mong muốn nâng cao uy tín, trở nên khác biệt trong mắt nhân viên và đối tác.',
   },
   {
-    title: 'Quản lý cấp trung',
+    title: 'Nhân viên thuộc các phòng ban trong doanh nghiệp',
     desc:
-      'Vẫn chưa vượt khỏi giá trị cốt lõi của sản phẩm - không tạo ra được giá trị cộng thêm/ các kênh vẫn còn chỉ...',
-  },
-  {
-    title: 'Nhân viên phòng ban',
-    desc:
-      'Có mong đợi được thăng tiến lên các vị trí cao hơn trong tương lai. Tư duy về thị trường chưa tốt...',
+      'Mong muốn được thăng tiến trong công việc, đảm nhận các vị trí cao hơn trong tương lai.',
   },
 ]
 const activeSlide = ref(slide[0])
@@ -72,7 +68,7 @@ watchEffect(() => {
 <style lang="scss">
 .slide {
   &.item-active {
-    .icon[data-v-44eae652] {
+    svg {
       path {
         fill: white;
       }

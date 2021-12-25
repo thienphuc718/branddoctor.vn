@@ -49,7 +49,7 @@
         }
       }
     }
-    .max-h-530rem {
+    .max-h-580rem {
       max-height: 100%;
       overflow: visible;
     }

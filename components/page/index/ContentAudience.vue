@@ -4,14 +4,16 @@
       <div class="flex justify-between">
         <div class="heading-2">
           <h2>
-            <span class="carolinaLight font-medium">
+            <span class="carolinaLight font-semibold">
               Đối tượng tham dự
             </span>
           </h2>
         </div>
         <div class="row items-center gap-16rem hidden-mob">
           <p>
-            <span class="inkLightest"> {{ slideProgress }}/2 </span>
+            <span class="inkLightest">
+              {{ hello.slideIndex.value + 1 }}/3
+            </span>
           </p>
           <BaseNav fill="#5584E5" stroke="#5584E5" class="gap-8rem">
             <BaseIcon
@@ -44,10 +46,4 @@ onMounted(() => {
   }
 })
 provide('slideIndex', hello.slideIndex)
-const slideProgress = ref(1)
-
-watchEffect(() => {
-  if (hello.slideIndex.value > 1) slideProgress.value = 2
-  else slideProgress.value = 1
-})
 </script>

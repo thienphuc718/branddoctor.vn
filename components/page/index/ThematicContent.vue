@@ -2,7 +2,7 @@
   <div id="program" class="col thematic-content">
     <div class="heading-2">
       <h2 class="mb-24rem">
-        <span class="carolinaLight font-medium">
+        <span class="carolinaLight font-semibold">
           Nội dung chuyên đề
         </span>
       </h2>
@@ -31,7 +31,7 @@
       >
         <div
           class="accord-header p-24rem flex gap-12rem items-start bg-skyLightest border-2 !border-#E3ECFF rounded-4rem min-h-80rem"
-          @click="activeAccord = accord"
+          @click="toggleAccord(accord)"
         >
           <p class="min-w-55rem">
             <span class="font-semibold blueLight">Buổi {{ index + 1 }}.</span>
@@ -133,7 +133,8 @@ const accord = [
       },
       {
         icon: 'pratice',
-        content: 'Phân tích SWOT để thấu hiểu bản thân và tối ưu hóa điểm mạnh.',
+        content:
+          'Phân tích SWOT để thấu hiểu bản thân và tối ưu hóa điểm mạnh.',
         link: '',
       },
       {
@@ -224,7 +225,7 @@ const accord = [
     title: {
       before: '',
       content:
-        'Lan tỏa thương hiệu bạn để mở rộng vòng tròn quan hệ trong kinh doanh',
+        'Lan tỏa thương hiệu của bản thân để mở rộng vòng tròn quan hệ trong kinh doanh',
       after: '',
     },
     content: [
@@ -276,6 +277,10 @@ const showAll = () => {
     })
   }
 }
+const toggleAccord = (accord) => {
+  activeAccord.value = accord
+  console.log(activeAccord.value)
+}
 </script>
 <style lang="scss" scoped>
 .gradient-text {
@@ -292,9 +297,9 @@ const showAll = () => {
     max-height: 200px;
   }
   .accord-content {
-    transition: 0.5s linear;
     position: absolute;
     opacity: 0;
+    pointer-events: none;
   }
   &.item-active {
     max-height: 500px;
