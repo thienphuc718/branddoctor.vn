@@ -130,7 +130,7 @@ const speaker = [
     desc1Content: [
       'Dấn thân vào đấu trường nhan sắc từ năm 2017, cô đăng quang Hoa hậu Đại dương Việt Nam 2017 và Á hậu 4 Miss Intercontinental 2018 khi chỉ mới ở ngưỡng tuổi 20.',
       'Đối mặt với nhiều tai tiếng sau khi đăng quang, cô lựa chọn hoàn thiện bản thân trên con đường học vấn, tốt nghiệp Thạc sĩ ngành Quản trị Sự Kiện Quốc Tế tại Đại học Salford (Anh).',
-      'Thành công chứng minh bản thân là một người phụ nữ “tài sắc vẹn toàn”, năm 2022, cô trở thành giảng viên tại Đại học Hoa Sen và được bổ nhiệm làm Giám đốc quản trị trẻ nhất của trường.',
+      'Thành công chứng minh bản thân là một người phụ nữ “tài sắc vẹn toàn”, năm 2021, cô trở thành giảng viên tại Đại học Hoa Sen và được bổ nhiệm làm Giám đốc quản trị trẻ nhất của trường.',
     ],
     // desc2: 'Hành trình phát triển',
     // desc2Content: [
