@@ -328,7 +328,7 @@ const toggleAccord = (accord) => {
   &.item-active {
     max-height: 500px;
     @include size(small) {
-      max-height: 1000px;
+      max-height: 1500px;
     }
     .accord-content {
       position: static;

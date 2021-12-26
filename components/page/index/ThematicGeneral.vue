@@ -38,9 +38,9 @@
             nhân.
           </p>
           <p>
-            Định hình được giá trị của bản thân, những điểm mạnh giúp bạn trở
-            nên nổi bật hơn trong mắt mọi người, có kế hoạch nuôi dưỡng giá trị
-            bản thân một cách chuyên nghiệp nhất.
+            Định hình được giá trị của bản thân, những điểm giúp bạn trở nên nổi
+            bật hơn trong mắt mọi người, có kế hoạch nuôi dưỡng giá trị bản thân
+            một cách chuyên nghiệp nhất.
           </p>
           <ul>
             <p class="-ml-12rem">

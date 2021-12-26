@@ -1,8 +1,8 @@
 <template>
-  <section class="light center">
+  <section class="light center z-9999">
     <div class="popup-content">
       <slot />
-      <div class="close-btn" @click="isPopupActive = false" />
+      <div class="close-btn cursor-pointer" @click="isPopupActive = false" />
     </div>
   </section>
 </template>
@@ -37,7 +37,7 @@ const isPopupActive = inject('isPopupActive')
     min-height: 500rem;
     background: white;
     position: relative;
-    padding: 24rem;
+    padding: 32rem;
     border-radius: 4rem;
     @include size(small) {
       min-width: calc(100% - 48rem);
@@ -51,6 +51,9 @@ const isPopupActive = inject('isPopupActive')
       top: 12rem;
       right: 12rem;
       opacity: 0.5;
+      border-radius: 50%;
+      background: $blueBasic;
+      padding: 4rem;
       &:hover {
         opacity: 1;
         cursor: pointer;
@@ -59,7 +62,7 @@ const isPopupActive = inject('isPopupActive')
         content: '';
         height: 24rem;
         width: 3rem;
-        background: black;
+        background: white;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -69,7 +72,7 @@ const isPopupActive = inject('isPopupActive')
         content: '';
         height: 24rem;
         width: 3rem;
-        background: black;
+        background: white;
         position: absolute;
         left: 50%;
         top: 50%;
