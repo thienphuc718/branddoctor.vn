@@ -130,7 +130,7 @@ const digit = [
 const counter = Counter('Jan 8 2022 09:00:00 GMT+0700 (Giờ Đông Dương)')
 
 const info = [
-  { icon: 'calendar', title: 'Khai giảng:', desc: '08/01/2021', bold: true },
+  { icon: 'calendar', title: 'Khai giảng:', desc: '08/01/2022', bold: true },
   {
     icon: 'calendar-day',
     title: 'Ngày học:',

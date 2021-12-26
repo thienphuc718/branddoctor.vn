@@ -35,7 +35,7 @@
               <div>
                 <h3>{{ slide.time }}</h3>
                 <p class="small" :class="{ 'mb-12rem': slide.speaker }">
-                  <span class="text-12rem">SÁNG | 08/01/2021</span>
+                  <span class="text-12rem">SÁNG | 08/01/2022</span>
                 </p>
               </div>
               <img

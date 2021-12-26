@@ -39,7 +39,7 @@
           >
             <div class="border-2rem rounded-40rem flex gap-8rem py-8rem px-16rem">
               <p>
-                08/01/2021
+                08/01/2022
               </p>
             </div>
             <div class="border-2rem rounded-40rem flex gap-8rem py-8rem px-16rem">

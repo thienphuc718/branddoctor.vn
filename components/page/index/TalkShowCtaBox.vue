@@ -8,7 +8,7 @@
         Thương hiệu cá nhân 5.0 – Góc nhìn từ những điểm khác biệt</span>
     </h3>
     <p class="flex gap-8rem hidden-mob w-100%">
-      <BaseIcon name="calendar" /><span class="w-121rem">Ngày tổ chức:</span><span class="font-medium">08/01/2021</span>
+      <BaseIcon name="calendar" /><span class="w-121rem">Ngày tổ chức:</span><span class="font-medium">08/01/2022</span>
     </p>
     <p class="flex gap-8rem mb-24rem hidden-mob w-100%">
       <BaseIcon name="zoom" /><span class="w-121rem">Hình thức:</span><span>Zoom Meeting</span>
