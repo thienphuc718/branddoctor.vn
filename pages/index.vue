@@ -4,7 +4,6 @@
     <PageIndexAnimation v-if="isAnimated" />
     <BaseRunningText />
     <BaseHeader />
-    <img src="https://bit.ly/3qsGUEU" alt="">
     <PageIndexSectionHero />
     <PageIndexSectionWhy />
     <PageIndexSectionTalkShow />
