@@ -192,13 +192,12 @@ const submitHandler = async(e) => {
     const formElement = e.target
     const { action, method } = formElement
     const body = new FormData(formElement)
-
+    submitTitle.title = 'Đang gửi'
     axios
       .post(action, body)
       .then((response) => {
         isPopupActive.value = true
         popupContent.value = body.get('your-email')
-        submitTitle.title = 'Đang gửi'
       })
       .catch((error) => {
         console.log(error)
