@@ -171,7 +171,7 @@ watchEffect(() => {
           },
           {
             type: 'text',
-            label: 'Quy mô tổ chức*',
+            label: 'Quy mô tổ chức',
             required: false,
             name: 'your-scale',
             placeholder: 'Nhập số lượng nhân viên tương ứng',
@@ -187,7 +187,7 @@ watchEffect(() => {
           {
             type: 'text',
             label: 'Số lượng học viên tham dự dự kiến',
-            required: false,
+            required: true,
             name: 'your-number',
             placeholder: 'Nhập số lượng học viên dự kiến',
             width: '50',
