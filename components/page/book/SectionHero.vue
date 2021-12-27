@@ -127,9 +127,8 @@
             </NuxtLink>
             <BaseButton
               title="Gửi lại email"
-              theme="light"
+              theme="blueBasic border-blueBasic"
               size="big"
-              class="blueBasic border-blueBasic"
               @click="submitBtnClick"
             />
           </div>
