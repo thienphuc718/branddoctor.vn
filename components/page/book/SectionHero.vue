@@ -26,8 +26,7 @@
             ref="submitBtn"
             :title="submitTitle"
             size="big"
-            theme="light"
-            class="border-white blueBasic"
+            theme="border-white blueBasic"
             type="submit"
             form="book-form"
           />
@@ -159,12 +158,13 @@ const submitHandler = async(e) => {
     const formElement = e.target
     const { action, method } = formElement
     const body = new FormData(formElement)
-    submitTitle.title = 'Đang gửi'
+    submitTitle.value = 'Đang gửi'
     axios
       .post(action, body)
       .then((response) => {
         isPopupActive.value = true
         popupContent.value = body.get('your-email')
+        submitTitle.value = 'Nhận ngay'
       })
       .catch((error) => {
         console.log(error)
