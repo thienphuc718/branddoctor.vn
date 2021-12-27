@@ -301,9 +301,13 @@ const showAll = () => {
   }
 }
 const toggleAccord = (accord) => {
-  if (activeAccord.value.title.content == accord.title.content)
+  if (activeAccord.value.title.content == accord.title.content) {
     activeAccord.value = blankAccord
-  else activeAccord.value = accord
+  }
+  else {
+    activeAccord.value = accord
+    document.querySelector('.accord.item-active').scrollIntoView()
+  }
 }
 </script>
 <style lang="scss" scoped>

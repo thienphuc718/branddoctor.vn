@@ -143,7 +143,7 @@ import formValidate from '~/logic/formValidate.ts'
 
 const isShow = ref(false)
 const popupContent = ref('')
-const isPopupActive = ref(false)
+const isPopupActive = ref(true)
 provide('isPopupActive', isPopupActive)
 
 const submitTitle = ref('Nhận ngay')
