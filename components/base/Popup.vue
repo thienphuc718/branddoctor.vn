@@ -37,7 +37,7 @@ const isPopupActive = inject('isPopupActive')
     min-height: 500rem;
     background: white;
     position: relative;
-    padding: 32rem;
+    padding: 40rem;
     border-radius: 4rem;
     @include size(small) {
       min-width: calc(100% - 48rem);
@@ -60,8 +60,8 @@ const isPopupActive = inject('isPopupActive')
       }
       &:before {
         content: '';
-        height: 24rem;
-        width: 3rem;
+        height: 16rem;
+        width: 1rem;
         background: white;
         position: absolute;
         left: 50%;
@@ -70,8 +70,8 @@ const isPopupActive = inject('isPopupActive')
       }
       &:after {
         content: '';
-        height: 24rem;
-        width: 3rem;
+        height: 16rem;
+        width: 1rem;
         background: white;
         position: absolute;
         left: 50%;

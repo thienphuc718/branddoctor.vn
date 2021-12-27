@@ -2,7 +2,7 @@ import { defineNuxtConfig } from 'nuxt3'
 
 export default defineNuxtConfig({
   meta: {
-    title: 'Brand Doctor Group',
+    title: 'Brand Doctor Academy',
   },
   buildModules: ['@vueuse/nuxt', '@pinia/nuxt', '@unocss/nuxt'],
   unocss: {

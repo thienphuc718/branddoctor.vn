@@ -8,17 +8,20 @@
         </h1>
         <form
           id="book-form"
-          class="flex gap-12rem mt-32rem"
+          class="mt-32rem flex gap-12rem"
           action="https://sever.branddoctorgroup.com/wp-json/contact-form-7/v1/contact-forms/12067/feedback"
           method="post"
           @submit.prevent="submitHandler"
         >
-          <input
-            type="email"
-            placeholder="example@email.com"
-            class=" px-14rem rounded-4rem border-none flex-grow font-medium"
-            name="your-email"
-          >
+          <label class="flex-grow relative">
+            <input
+              type="email"
+              data-required="true"
+              placeholder="example@email.com"
+              class="w-100% !mt-0 px-14rem rounded-4rem border-none flex-grow font-medium"
+              name="your-email"
+            >
+          </label>
           <BaseButton
             ref="submitBtn"
             :title="submitTitle"
@@ -35,7 +38,7 @@
         >
           <input
             id="checkbox"
-            class="font-medium w-24rem h-24rem border-3px border-white"
+            class="!mt-0 font-medium w-24rem h-24rem border-3px border-white"
             type="checkbox"
           >
           <span>Cập nhật thông tin, sự kiện thương hiệu mới cho tôi.</span>
@@ -85,20 +88,26 @@
       height="427.37"
     >
     <BasePopup v-if="isPopupActive" class="popup-guidebook">
-      <div class="row gap-61rem">
+      <div class="row gap-48rem">
+        <img
+          src="/ldp-popup-img.jpg"
+          width="312"
+          height="506"
+          class="rounded-4rem hidden-mob"
+        >
         <div class="text">
           <div class="heading-1 heading-box w-370rem">
-            <h2 class="mb-32rem !leading-1.3em">
-              <span class="blueLight font-medium">
-                Bạn có muốn tham gia talkshow về sự
-                <span class="yellowBasic"> khác biệt?</span>
+            <h2 class="mb-32rem !leading-1.2em">
+              <span class="blueLight text-32rem">
+                <span class="blueBasic">Khác biệt dễ hay khó?</span> Tìm lời
+                giải đáp tại Talk Show của BDA vào ngày 07/01/2022
               </span>
             </h2>
             <div class="col gap-24rem">
               <p>
                 <span class="inkLight text-18rem">Cảm ơn bạn đã đăng ký nhận ebook từ BDA. Vui lòng kiểm tra
                   thư email:
-                  <span class="inkBasic font-medium">{{
+                  <span class="inkBasic font-medium block">{{
                     popupContent
                   }}</span></span>
               </p>
@@ -109,13 +118,6 @@
             </div>
           </div>
           <div class="row mt-32rem gap-12rem">
-            <BaseButton
-              title="Gửi lại email"
-              theme="light"
-              size="big"
-              class="blueBasic border-blueBasic"
-              @click="submitBtnClick"
-            />
             <NuxtLink to="/">
               <BaseButton
                 title="Tìm hiểu Talk Show"
@@ -124,21 +126,21 @@
                 class="white hover:!bg-blue-600"
               />
             </NuxtLink>
+            <BaseButton
+              title="Gửi lại email"
+              theme="light"
+              size="big"
+              class="blueBasic border-blueBasic"
+              @click="submitBtnClick"
+            />
           </div>
         </div>
-        <img
-          src="/ldp-popup-img.jpg"
-          width="293"
-          alt="481"
-          class="rounded-4rem hidden-mob"
-        >
       </div>
     </BasePopup>
   </div>
 </template>
 <script setup lang="ts">
 import axios from 'axios'
-import gsap from 'gsap'
 import formValidate from '~/logic/formValidate.ts'
 
 const isShow = ref(false)
@@ -151,41 +153,6 @@ const submitBtn = ref(null)
 const submitBtnClick = () => {
   submitBtn.value.click()
 }
-onMounted(() => {
-  const waves = document.querySelectorAll('.wave')
-  const lefts = []
-  const bottoms = []
-
-  for (let index = 0; index < waves.length; index++) {
-    const element = waves[index]
-
-    const styles = getComputedStyle(element)
-    gsap
-      .timeline()
-      .add()
-      .repeat(-1)
-      .to(element, {
-        left: parseFloat(styles.left) + (50 * (index + 1)) / 5,
-        duration: 2,
-        ease: 'power1.out',
-      })
-      .to(element, {
-        bottom: parseFloat(styles.bottom) + (50 * (index + 1)) / 5,
-        duration: 2,
-        ease: 'power1.out',
-      })
-      .to(element, {
-        left: parseFloat(styles.left),
-        duration: 2,
-        ease: 'power1.out',
-      })
-      .to(element, {
-        bottom: parseFloat(styles.bottom),
-        duration: 2,
-        ease: 'power1.out',
-      })
-  }
-})
 
 const submitHandler = async(e) => {
   if (formValidate(e)) {
@@ -214,6 +181,18 @@ const submitHandler = async(e) => {
     min-height: 855rem;
     .wave {
       transform: translateX(-50%);
+    }
+    .popup-content {
+      .cta {
+        width: 100%;
+      }
+      h2 {
+        span {
+          font-weight: 600;
+          font-size: 24rem;
+          line-height: 1.2em !important;
+        }
+      }
     }
     h1 {
       line-height: 0.8em !important;

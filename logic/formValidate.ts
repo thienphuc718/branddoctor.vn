@@ -8,10 +8,10 @@ export default function formValidate(e) {
   const formValue = {}
   formFields.forEach((input) => {
     input.onclick = () => {
-      input.parentNode.setAttribute('class', '')
+      input.parentNode.classList.remove('error', 'required')
     }
     if (input.value == '' && input.getAttribute('data-required') == 'true')
-      input.parentNode.setAttribute('class', 'error required')
+      input.parentNode.classList.add('error', 'required')
     else formValue[input.name] = input.value
   })
   if (Object.keys(formValue).length == formFields.length) return true
