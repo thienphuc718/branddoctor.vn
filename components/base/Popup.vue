@@ -37,7 +37,7 @@ const isPopupActive = inject('isPopupActive')
     min-height: 500rem;
     background: white;
     position: relative;
-    padding: 40rem;
+    padding: 32rem;
     border-radius: 4rem;
     @include size(small) {
       min-width: calc(100% - 48rem);

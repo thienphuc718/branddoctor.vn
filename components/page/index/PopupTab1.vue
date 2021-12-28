@@ -69,6 +69,7 @@
         </div>
       </div>
       <input type="hidden" name="your-type" :value="activeTab.title">
+      <input type="hidden" :value="params" name="your-src">
       <div
         v-for="index in cloneIndex"
         v-if="activeTab.title == tab[1].title"
@@ -125,6 +126,8 @@ const activeTab = ref(tab[0])
 const activeField = ref(fields.value[0])
 const cloneIndex = inject('cloneIndex')
 const firstTabValue = fields.value
+const route = useRoute()
+const params = route.fullPath.split('?src=')[1]
 
 watchEffect(() => {
   if (activeTab.value.title === tab[2].title) {

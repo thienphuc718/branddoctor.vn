@@ -80,7 +80,7 @@
     <img
       v-for="wave in 4"
       :key="wave"
-      src="/wave1.svg"
+      :src="`/wave${wave}.svg`"
       alt=""
       :class="`wave wave${wave} absolute`"
       width="3017.5"
