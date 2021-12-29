@@ -10,4 +10,7 @@
 </style>
 <script setup lang="ts">
 import 'uno.css'
+useMeta({
+  script: { src: '/pixel.js' },
+})
 </script>
