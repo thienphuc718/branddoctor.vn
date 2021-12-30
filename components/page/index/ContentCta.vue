@@ -40,16 +40,18 @@
         </div>
         <div class="col gap-12rem mt-8rem">
           <BaseButton
+            id="contentCtaTalkshow"
             theme="dark"
             size="regular"
             title="Đăng ký Talk Show"
-            @click="isCheckout = true"
+            @click="checkoutToggle"
           />
           <PageIndexCta
+            id="contentCtaChuyende"
             title="Đăng ký chuyên đề"
             size="regular"
             theme="light"
-            @click="isCheckout = true"
+            @click="checkoutToggle"
           />
         </div>
       </div>
@@ -121,6 +123,10 @@
 import Counter from '~/logic/Counter.ts'
 
 const isCheckout = inject('isCheckout')
+const checkoutToggle = (e) => {
+  isCheckout.value = true
+  fbq('trackCustom', e.target.getAttribute('id'))
+}
 const digit = [
   { type: 'days', text: 'NGÀY' },
   { type: 'hours', text: 'GIỜ' },

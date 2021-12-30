@@ -1,6 +1,7 @@
 label {
   color: $inkBasic;
   position: relative;
+  display: block;
   &.item-active {
     font-weight: 600;
     color: $blueLight;

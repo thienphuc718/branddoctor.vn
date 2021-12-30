@@ -37,17 +37,23 @@
           <div
             class="flex flex-wrap justify-center flex-1 gap-16rem hidden-des mt-32rem"
           >
-            <div class="border-2rem rounded-40rem flex gap-8rem py-8rem px-16rem">
+            <div
+              class="border-2rem rounded-40rem flex gap-8rem py-8rem px-16rem"
+            >
               <p>
                 08/01/2022
               </p>
             </div>
-            <div class="border-2rem rounded-40rem flex gap-8rem py-8rem px-16rem">
+            <div
+              class="border-2rem rounded-40rem flex gap-8rem py-8rem px-16rem"
+            >
               <p>
                 Zoom Meeting
               </p>
             </div>
-            <div class="border-2rem rounded-40rem flex gap-8rem py-8rem px-16rem">
+            <div
+              class="border-2rem rounded-40rem flex gap-8rem py-8rem px-16rem"
+            >
               <p>
                 <span class="font-semibold">Toàn chuyên đề: 4 buổi (10 giờ)</span>
               </p>
@@ -97,18 +103,20 @@
             <p>
               <span class="blueLight">Bạn được tặng miễn phí 1 vé Talk Show Thương hiệu cá nhân.
                 <a
+                  id="tooltip"
                   href="#dang-ky"
-                  @click="isCheckout = true"
+                  @click="checkoutToggle"
                 ><span class="blueLight font-semibold">Đăng ký ngay!</span></a></span>
             </p>
           </div>
           <BaseButton
+            id="talkshowHero"
             title="Tham gia Talk Show"
             size="big"
             theme="dark"
             @mouseover="isTooltip = true"
             @mouseout="isTooltip = false"
-            @click="isCheckout = true"
+            @click="checkoutToggle"
           />
         </div>
         <p class="text-center hidden-des">
@@ -116,10 +124,11 @@
           <a href="#dang-ky"><span class="font-semibold">Đăng ký ngay!</span></a>
         </p>
         <PageIndexCta
+          id="talkshowChuyenDe"
           theme="dark"
           size="big"
           title="Đăng ký chuyên đề"
-          @click="isCheckout = true"
+          @click="checkoutToggle"
         />
       </div>
     </div>
@@ -190,6 +199,10 @@
 import Counter from '~/logic/Counter.ts'
 
 const isCheckout = inject('isCheckout')
+const checkoutToggle = (e) => {
+  isCheckout.value = true
+  fbq('trackCustom', e.target.getAttribute('id'))
+}
 const digit = [
   { type: 'days', text: 'NGÀY' },
   { type: 'hours', text: 'GIỜ' },

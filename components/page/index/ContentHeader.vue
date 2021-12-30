@@ -27,16 +27,18 @@
       <PageIndexProgress bar="#5584E5" inner="#DFE3E8" bg="white" />
       <div class="flex gap-16rem items-center">
         <BaseButton
+          id="contentHeaderTalkshow"
           title="Tham gia Talk Show"
           size="big"
           theme="dark"
-          @click="isCheckout = true"
+          @click="checkoutToggle"
         />
         <PageIndexCta
+          id="contentCtaChuyende"
           theme="light"
           size="big"
           title="Đăng ký chuyên đề"
-          @click="isCheckout = true"
+          @click="checkoutToggle"
         />
       </div>
     </div>
@@ -51,6 +53,10 @@ const window = getWindow()
 const document = getDocument()
 
 const isCheckout = inject('isCheckout')
+const checkoutToggle = (e) => {
+  isCheckout.value = true
+  fbq('trackCustom', e.target.getAttribute('id'))
+}
 
 const menu = [
   {

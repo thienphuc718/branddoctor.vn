@@ -1,12 +1,13 @@
 <template>
   <div
+    id="checkoutpopup"
     class="padding-all fixed left-0 right-0 top-0 bottom-0 z-99999 light overflow-y-scroll"
   >
     <div
       class="heading-1 flex gap-24rem mb-40rem heading-box cursor-pointer"
       @click="isCheckout = false"
     >
-      <BaseIcon name="cheviron-prev" />
+      <BaseIcon id="popup-prev" name="cheviron-prev" />
       <h2><span class="white">Xác nhận đăng ký tham gia</span></h2>
     </div>
     <form
@@ -253,22 +254,13 @@ const submitHandler = async(e) => {
 }
 </style>
 <style lang="scss">
-.icon-cheviron-prev[data-v-5cb4a96c] {
-  path {
-    fill: white;
-  }
-  rect {
-    stroke: white;
-  }
-}
-.icon-cheviron-next[data-v-5cb4a96c] {
+#checkoutpopup {
   svg {
-    transform: scale(1.5);
     path {
       fill: white;
     }
     rect {
-      display: none;
+      stroke: white;
     }
   }
 }

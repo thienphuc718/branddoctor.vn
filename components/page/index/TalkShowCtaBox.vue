@@ -21,17 +21,22 @@
     </p>
     <div>
       <BaseButton
+        id="talkshowCta"
         title="Tham gia Talk Show"
         theme="light"
         size="big"
         class="mt-24rem cta-box-cta min-w-272rem"
-        @click="isCheckout = true"
+        @click="checkoutToggle"
       />
     </div>
   </div>
 </template>
 <script setup lang="ts">
 const isCheckout = inject('isCheckout')
+const checkoutToggle = (e) => {
+  isCheckout.value = true
+  fbq('trackCustom', e.target.getAttribute('id'))
+}
 </script>
 <style lang="scss" scoped>
 .cta-box-cta {

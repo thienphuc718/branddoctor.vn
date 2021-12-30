@@ -69,9 +69,10 @@
               {{ content.content }}
               <a
                 v-if="content.link.length"
+                id="thematicContentlink"
                 href="#dang-ky"
                 class="font-bold blueLight"
-                @click="isCheckout = true"
+                @click="checkoutToggle"
               >{{ content.link }}</a>
             </span>
           </p>
@@ -97,6 +98,10 @@ onMounted(() => {
   }
 })
 const isCheckout = inject('isCheckout')
+const checkoutToggle = (e) => {
+  isCheckout.value = true
+  fbq('trackCustom', e.target.getAttribute('id'))
+}
 
 const content = ['4 buổi ', '•', '10 giờ học', '•', '2 giảng viên hướng dẫn']
 const blankAccord = {

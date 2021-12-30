@@ -37,22 +37,24 @@
               <PageIndexProgress bar="#5584E5" inner="#DFE3E8" bg="white" />
             </div>
             <BaseButton
+              id="FAQticketTalkshow"
               title="Tham gia Talk Show"
               size="big"
               theme="dark"
               class="w-288rem my-32rem"
-              @click="isCheckout = true"
+              @click="checkoutToggle"
             />
             <p class="font-semibold py-24rem border-t-2rem">
               Hoặc nếu bạn suy nghĩ lại, bạn vẫn có thể đăng ký chuyên đề đào
               tạo tại đây:
             </p>
             <PageIndexCta
+              id="FAQticketChuyende"
               theme="light"
               size="big"
               title="Đăng ký chuyên đề"
               class="w-288rem mb-32rem"
-              @click="isCheckout = true"
+              @click="checkoutToggle"
             />
           </div>
         </div>
@@ -65,6 +67,10 @@
 import Counter from '~/logic/Counter.ts'
 
 const isCheckout = inject('isCheckout')
+const checkoutToggle = (e) => {
+  isCheckout.value = true
+  fbq('trackCustom', e.target.getAttribute('id'))
+}
 const digit = [
   { type: 'days', text: 'NGÀY' },
   { type: 'hours', text: 'GIỜ' },
