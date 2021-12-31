@@ -335,7 +335,7 @@ const toggleAccord = (accord) => {
     pointer-events: none;
   }
   &.item-active {
-    max-height: 500px;
+    max-height: 1000px;
     @include size(small) {
       max-height: 1500px;
     }
