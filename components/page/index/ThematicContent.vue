@@ -313,6 +313,7 @@ const toggleAccord = (accord) => {
     activeAccord.value = accord
     document.querySelector('.accord.item-active').scrollIntoView()
   }
+  console.log(accord)
 }
 </script>
 <style lang="scss" scoped>
