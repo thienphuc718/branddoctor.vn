@@ -189,7 +189,7 @@ watchEffect(() => {
         fields: [
           {
             type: 'text',
-            label: 'Số lượng học viên tham dự dự kiến',
+            label: 'Số lượng học viên tham dự dự kiến*',
             required: true,
             name: 'your-number',
             placeholder: 'Nhập số lượng học viên dự kiến',
