@@ -22,7 +22,7 @@
     </div>
     <div id="thematic-accordion" class="accordion mt-24rem">
       <div
-        v-for="(accord, index) in accord"
+        v-for="(accord, index) in accords"
         :key="accord"
         class="accord mb-16rem last:border-b-2rem"
         :class="{
@@ -104,21 +104,7 @@ const checkoutToggle = (e) => {
 }
 
 const content = ['4 buổi ', '•', '10 giờ học', '•', '2 giảng viên hướng dẫn']
-const blankAccord = {
-  title: {
-    before: '',
-    content: '',
-    after: '',
-  },
-  content: [
-    {
-      icon: '',
-      content: '',
-      link: '',
-    },
-  ],
-}
-const accord = [
+const accords = [
   {
     title: {
       before: 'Talk Show |',
@@ -288,7 +274,7 @@ const accord = [
     ],
   },
 ]
-const activeAccord = ref(accord[0])
+const activeAccord = ref(accords[0])
 const isShowAll = ref(false)
 
 const showAll = () => {
@@ -306,14 +292,10 @@ const showAll = () => {
   }
 }
 const toggleAccord = (accord) => {
-  if (activeAccord.value.title.content == accord.title.content) {
-    activeAccord.value = blankAccord
-  }
-  else {
-    activeAccord.value = accord
+  activeAccord.value = accord
+  setTimeout(() => {
     document.querySelector('.accord.item-active').scrollIntoView()
-  }
-  console.log(accord)
+  }, 100)
 }
 </script>
 <style lang="scss" scoped>
