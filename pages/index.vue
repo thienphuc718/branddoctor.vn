@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <PageIndexPopup v-if="isCheckout" />
-    <PageIndexAnimation v-if="isAnimated" />
+    <!-- <PageIndexAnimation v-if="isAnimated" /> -->
     <BaseRunningText />
     <BaseHeader />
     <PageIndexSectionHero />
@@ -17,18 +17,18 @@
 import { getDocument } from 'ssr-window'
 
 const document = getDocument()
-const isAnimated = ref(false)
+// const isAnimated = ref(false)
 const isCheckout = ref(false)
 provide('isCheckout', isCheckout)
-provide('isAnimated', isAnimated)
-onMounted(() => {
-  isAnimated.value = true
-  watchEffect(() => {
-    if (isAnimated.value)
-      document.querySelector('html').style.overflow = 'hidden'
-    else document.querySelector('html').style.overflow = ''
-  })
-})
+// provide('isAnimated', isAnimated)
+// onMounted(() => {
+//   isAnimated.value = true
+//   watchEffect(() => {
+//     if (isAnimated.value)
+//       document.querySelector('html').style.overflow = 'hidden'
+//     else document.querySelector('html').style.overflow = ''
+//   })
+// })
 
 useMeta({
   meta: [
