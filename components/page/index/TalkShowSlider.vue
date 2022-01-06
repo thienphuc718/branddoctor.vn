@@ -89,7 +89,7 @@ const slide = [
   {
     time: '09:15',
     title: 'Câu chuyện xây dựng thương hiệu của tôi',
-    before: 'Clip ngắn |',
+    before: '',
     desc:
       'Lắng nghe diễn giả chia sẻ về câu chuyện xây dựng thương hiệu cá nhân của họ.',
     speaker: true,
