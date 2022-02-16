@@ -206,39 +206,6 @@ const accords = [
     title: {
       before: '',
       content:
-        'Nâng cấp giá trị bản thân dựa trên mô hình 5 cấp độ thương hiệu cá nhân theo Brand Doctor',
-      after: '',
-    },
-    content: [
-      {
-        icon: 'speaker',
-        content: 'TS. Nguyễn Khánh Trung',
-        link: '',
-      },
-      {
-        icon: 'book',
-        content:
-          'Bạn đang ở đâu trong mô hình 5 cấp độ thương hiệu cá nhân theo Brand Doctor?',
-        link: '',
-      },
-      {
-        icon: 'book',
-        content:
-          'Quy trình thấu hiểu khách hàng mục tiêu và tạo giải pháp giá trị để tìm ra USP khác biệt.',
-        link: '',
-      },
-      {
-        icon: 'pratice',
-        content:
-          'Điều chỉnh bảng định vị và nâng cấp thương hiệu cá nhân thông qua hành trình khách hàng của bạn.',
-        link: '',
-      },
-    ],
-  },
-  {
-    title: {
-      before: '',
-      content:
         'Lan tỏa thương hiệu của bản thân để mở rộng vòng tròn quan hệ trong kinh doanh',
       after: '',
     },
@@ -250,13 +217,40 @@ const accords = [
       },
       {
         icon: 'book',
-        content: '3 nguyên tắc để tạo dấu ấn trên các nền tảng mạng xã hội.',
+        content:
+          '3 nguyên tắc để tạo dấu ấn trên các nền tảng mạng xã hội.',
         link: '',
       },
       {
         icon: 'book',
         content:
           'Mở rộng tầm ảnh hưởng của bạn trong các vòng tròn quan hệ: Dễ hay khó?',
+        link: '',
+      },
+      {
+        icon: 'pratice',
+        content:
+          'Xây dựng chiến lược phát huy tầm ảnh hưởng tại Cộng đồng Brand Doctors.',
+        link: '',
+      },
+    ],
+  },
+  {
+    title: {
+      before: '',
+      content:
+        'Nâng cấp giá trị bản thân dựa trên mô hình 5 cấp độ thương hiệu theo Brand Doctor',
+      after: '',
+    },
+    content: [
+      {
+        icon: 'speaker',
+        content: 'TS. Nguyễn Khánh Trung',
+        link: '',
+      },
+      {
+        icon: 'book',
+        content: 'Bạn cần làm gì để đạt được những cấp độ thương hiệu cao hơn?',
         link: '',
       },
       {
@@ -268,7 +262,7 @@ const accords = [
       {
         icon: 'pratice',
         content:
-          'Xây dựng chiến lược phát huy tầm ảnh hưởng tại Cộng đồng Brand Doctors.',
+          'Lên kế hoạch nâng cấp giá trị bản thân để đạt được những cấp độ thương hiệu cao hơn.',
         link: '',
       },
     ],
